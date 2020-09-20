@@ -1,0 +1,15 @@
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe.config
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.pdb
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.xml
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbprojAssemblyReference.cache
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Form3.resources
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Resources.resources
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.GenerateResource.cache
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.CoreCompileInputs.cache
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.exe
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.xml
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.pdb
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmStart.resources
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Inicio.resources
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Boletas.resources

@@ -28,20 +28,26 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(368, 162)
+        Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label1.Location = New System.Drawing.Point(307, 162)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(23, 13)
+        Me.Label1.Size = New System.Drawing.Size(22, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Gei"
         '
-        'Form3
+        'Pruebas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(667, 450)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form3"
-        Me.Text = "Form3"
+        Me.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Name = "Pruebas"
+        Me.Text = "Pruebas"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
