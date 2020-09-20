@@ -32,9 +32,9 @@ Partial Class Boletas
         Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label1.Location = New System.Drawing.Point(244, 88)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 13)
+        Me.Label1.Size = New System.Drawing.Size(68, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Garita playo"
+        Me.Label1.Text = "Garita replayo"
         '
         'Boletas
         '

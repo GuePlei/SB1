@@ -1,16 +1,15 @@
 ﻿Imports System.Runtime.InteropServices
-
 Public Class FrmStart
     Private Currentchildform As Form
 #Region "Funcionalidades del Formulario"
-
-    'ARRASTRAR FORMULARIO
+    'Arrastrar Form desde el panel
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
     <DllImport("user32.DLL", EntryPoint:="SendMessage")>
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
+    'Also arrastrar desde el panel
     Private Sub PlnHead_MouseMove(sender As Object, e As MouseEventArgs) Handles PlnHead.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
@@ -19,14 +18,7 @@ Public Class FrmStart
         Application.Exit()
     End Sub
     Private Sub BtnMxi_Click(sender As Object, e As EventArgs) Handles BtnMxi.Click
-        'Call winstate()
-        If WindowState = FormWindowState.Normal Then
-            WindowState = FormWindowState.Maximized
-            BtnMxi.Image = My.Resources.icons8_restore_window_24px
-        Else
-            WindowState = FormWindowState.Normal
-            BtnMxi.Image = My.Resources.icons8_maximize_window_24px
-        End If
+        Call winstate()
     End Sub
     Private Sub PlnHead_DoubleClick(sender As Object, e As EventArgs) Handles PlnHead.DoubleClick
         Call winstate()
@@ -34,14 +26,15 @@ Public Class FrmStart
     Private Sub BtnMini_Click(sender As Object, e As EventArgs) Handles BtnMini.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+    'Ventana de titulo
     Private Sub FrmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BtnHome.Visible = False
-        'Form'
         Me.Text = String.Empty
         Me.ControlBox = False
         Me.DoubleBuffered = True
         Me.MaximizedBounds = Screen.PrimaryScreen.WorkingArea
     End Sub
+    'Devuelve la capacidad de resize de la ventana
     Private Sub FrmStart_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         If WindowState = FormWindowState.Maximized Then
             FormBorderStyle = FormBorderStyle.None
@@ -49,7 +42,7 @@ Public Class FrmStart
             FormBorderStyle = FormBorderStyle.Sizable
         End If
     End Sub
-
+    'Función para maximizar y cambiar iconos
     Private Sub winstate()
         If WindowState = FormWindowState.Normal Then
             WindowState = FormWindowState.Maximized
@@ -58,50 +51,17 @@ Public Class FrmStart
             WindowState = FormWindowState.Normal
             BtnMxi.Image = My.Resources.icons8_maximize_window_24px
         End If
-
     End Sub
     Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
         BtnClose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
-
     Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
-
-    Private Sub BtnMxi_MouseEnter(sender As Object, e As EventArgs) Handles BtnMxi.MouseEnter
-        BtnMxi.Image = My.Resources.icons8_maximize_window_24px_1
-    End Sub
-    Private Sub Btnmxi_MouseLeave(sender As Object, e As EventArgs) Handles BtnMxi.MouseLeave
-        BtnMxi.Image = My.Resources.icons8_maximize_window_24px
-    End Sub
-    Private Sub BtnMni_MouseEnter(sender As Object, e As EventArgs) Handles BtnMini.MouseEnter
-        BtnMini.Image = My.Resources.icons8_minimize_window_24px_1
-    End Sub
-    Private Sub BtnMini_MouseEnter(sender As Object, e As EventArgs) Handles BtnMini.MouseLeave
-        BtnMini.Image = My.Resources.icons8_minimize_window_24px
-    End Sub
 #End Region
-    'Abrir Formularios
-    '  Private Sub AbrirFrmEnPanel(Of Miform As {Form, New})()
-    'Dim Formulario As Form
-    '     Formulario = PanelFrms.Controls.OfType(Of Miform)().FirstOrDefault() 'Busca el formulario
-    'Si form no se encuentra/no existe
-    '   If Formulario Is Nothing Then
-    '      Formulario = New Miform()
-    '   Formulario.TopLevel = False
-    '      PanelFrms.Controls.Add(Formulario)
-    '      PanelFrms.Tag = Formulario
-    '       Formulario.Show()
-    '   Else
-    '     Formulario.BringToFront()
-    '   End If
-    '  End Sub
-
-
-
+    'Abrir forms en el panel contenedor
     Private Sub OpenChildForm(childForm As Form)
         If Currentchildform IsNot Nothing Then
-
             Currentchildform.Close()
         End If
         Currentchildform = childForm
@@ -120,12 +80,10 @@ Public Class FrmStart
     Private Sub BtnHome_Click(sender As Object, e As EventArgs) Handles BtnHome.Click
         OpenChildForm(New FrmStart)
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         OpenChildForm(New Form3)
     End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        OpenChildForm(New FrmStart)
+        OpenChildForm(New Inicio)
     End Sub
 End Class
