@@ -1,4 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
+Imports CapaComún
+Imports Dominio
 Public Class FrmStart
     Private Currentchildform As Form
 #Region "Funcionalidades del Formulario"
@@ -15,7 +17,10 @@ Public Class FrmStart
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
-        Application.Exit()
+        If MessageBox.Show("¿Estás seguro de querer cerrar la aplicación?", "¡Atención!",
+                  MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Application.Exit()
+        End If
     End Sub
     Private Sub BtnMxi_Click(sender As Object, e As EventArgs) Handles BtnMxi.Click
         Call winstate()
@@ -27,7 +32,22 @@ Public Class FrmStart
         Me.WindowState = FormWindowState.Minimized
     End Sub
     'Ventana de titulo
+    Private Sub loadUser()
+        LblName.Text = ActiveUser.firstName + ", " + ActiveUser.lastName
+        Lblem.Text = ActiveUser.email
+        LblPos.Text = ActiveUser.position
+    End Sub
+    Private Sub security()
+        Dim user As New UserModel()
+        If user.anyMethod(ActiveUser.idUSer) = False Then
+            MessageBox.Show("Error")
+            Me.Close()
+        End If
+    End Sub
     Private Sub FrmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        security()
+        loadUser()
+        administraciondepermisos()
         BtnHome.Visible = False
         Me.Text = String.Empty
         Me.ControlBox = False
@@ -58,7 +78,16 @@ Public Class FrmStart
     Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
+    Private Sub BtnCls_Click(sender As Object, e As EventArgs) Handles BtnCls.Click
+        If MessageBox.Show("¿Estás seguro de querer cerrar sesión?", "¡Atención!",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
+            Me.Close()
+
+        End If
+
+    End Sub
 #End Region
+#Region "Botones para el contenedor del formulario"
     'Abrir forms en el panel contenedor
     Private Sub OpenChildForm(childForm As Form)
         If Currentchildform IsNot Nothing Then
@@ -72,7 +101,7 @@ Public Class FrmStart
         PanelContenedor.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-        LblTop.Text = childForm.Text
+        '  LblTop.Text = childForm.Text
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnBolFrm2.Click
         OpenChildForm(New Boletas)
@@ -85,5 +114,16 @@ Public Class FrmStart
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         OpenChildForm(New Inicio)
+    End Sub
+#End Region
+    Private Sub administraciondepermisos()
+        If ActiveUser.position = Puestos.Manager Then
+            Button3.Enabled = False
+
+        End If
+        If ActiveUser.position = Puestos.CEO Then
+            BtnBolFrm2.Enabled = False
+            Button2.Enabled = False
+        End If
     End Sub
 End Class

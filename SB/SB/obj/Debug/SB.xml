@@ -32,7 +32,17 @@ SB
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:SB.My.Resources.Resources.icons8_eye_24px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SB.My.Resources.Resources.icons8_home_32px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.icons8_invisible_24px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -58,6 +68,11 @@ SB
 </summary>
 </member>
 <member name="P:SB.My.Resources.Resources.icons8_restore_window_24px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.icons8_teacher_124px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

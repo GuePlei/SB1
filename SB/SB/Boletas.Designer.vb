@@ -23,6 +23,8 @@ Partial Class Boletas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnClose = New System.Windows.Forms.PictureBox()
+        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -36,20 +38,34 @@ Partial Class Boletas
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Garita replayo"
         '
+        'BtnClose
+        '
+        Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
+        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(24, 24)
+        Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BtnClose.TabIndex = 1
+        Me.BtnClose.TabStop = False
+        '
         'Boletas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(767, 509)
+        Me.Controls.Add(Me.BtnClose)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Boletas"
         Me.Text = "Boletas"
+        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents BtnClose As PictureBox
 End Class

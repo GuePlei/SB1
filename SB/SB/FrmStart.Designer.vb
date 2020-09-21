@@ -37,8 +37,13 @@ Partial Class FrmStart
         Me.PbLogo = New System.Windows.Forms.PictureBox()
         Me.BtnBolFrm2 = New System.Windows.Forms.Button()
         Me.PanelFrms = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BtnCls = New System.Windows.Forms.Button()
+        Me.LblPos = New System.Windows.Forms.Label()
+        Me.LblName = New System.Windows.Forms.Label()
+        Me.Lblem = New System.Windows.Forms.Label()
+        Me.Pbuser = New System.Windows.Forms.PictureBox()
         Me.PanelContenedor.SuspendLayout()
         Me.PlnHead.SuspendLayout()
         CType(Me.BtnHome, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +54,7 @@ Partial Class FrmStart
         Me.Panel1.SuspendLayout()
         CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelFrms.SuspendLayout()
+        CType(Me.Pbuser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelContenedor
@@ -60,7 +66,7 @@ Partial Class FrmStart
         Me.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelContenedor.Location = New System.Drawing.Point(0, 0)
         Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(800, 450)
+        Me.PanelContenedor.Size = New System.Drawing.Size(955, 546)
         Me.PanelContenedor.TabIndex = 0
         '
         'PlnHead
@@ -72,9 +78,9 @@ Partial Class FrmStart
         Me.PlnHead.Controls.Add(Me.BtnMini)
         Me.PlnHead.Controls.Add(Me.BtnClose)
         Me.PlnHead.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PlnHead.Location = New System.Drawing.Point(220, 0)
+        Me.PlnHead.Location = New System.Drawing.Point(188, 0)
         Me.PlnHead.Name = "PlnHead"
-        Me.PlnHead.Size = New System.Drawing.Size(580, 40)
+        Me.PlnHead.Size = New System.Drawing.Size(767, 40)
         Me.PlnHead.TabIndex = 1
         '
         'LblTop
@@ -91,7 +97,7 @@ Partial Class FrmStart
         '
         Me.BtnHome.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnHome.Image = Global.SB.My.Resources.Resources.icons8_home_32px
-        Me.BtnHome.Location = New System.Drawing.Point(238, 3)
+        Me.BtnHome.Location = New System.Drawing.Point(425, 3)
         Me.BtnHome.Name = "BtnHome"
         Me.BtnHome.Size = New System.Drawing.Size(32, 32)
         Me.BtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -102,7 +108,7 @@ Partial Class FrmStart
         '
         Me.BtnMxi.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnMxi.Image = Global.SB.My.Resources.Resources.icons8_maximize_window_24px
-        Me.BtnMxi.Location = New System.Drawing.Point(523, 3)
+        Me.BtnMxi.Location = New System.Drawing.Point(710, 3)
         Me.BtnMxi.Name = "BtnMxi"
         Me.BtnMxi.Size = New System.Drawing.Size(24, 24)
         Me.BtnMxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -113,7 +119,7 @@ Partial Class FrmStart
         '
         Me.BtnMini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnMini.Image = Global.SB.My.Resources.Resources.icons8_minimize_window_24px
-        Me.BtnMini.Location = New System.Drawing.Point(493, 3)
+        Me.BtnMini.Location = New System.Drawing.Point(680, 3)
         Me.BtnMini.Name = "BtnMini"
         Me.BtnMini.Size = New System.Drawing.Size(24, 24)
         Me.BtnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -124,7 +130,7 @@ Partial Class FrmStart
         '
         Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
-        Me.BtnClose.Location = New System.Drawing.Point(553, 3)
+        Me.BtnClose.Location = New System.Drawing.Point(740, 3)
         Me.BtnClose.Name = "BtnClose"
         Me.BtnClose.Size = New System.Drawing.Size(24, 24)
         Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -134,6 +140,7 @@ Partial Class FrmStart
         'PlnMenu
         '
         Me.PlnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.PlnMenu.Controls.Add(Me.BtnCls)
         Me.PlnMenu.Controls.Add(Me.Button3)
         Me.PlnMenu.Controls.Add(Me.Button2)
         Me.PlnMenu.Controls.Add(Me.Panel1)
@@ -141,7 +148,7 @@ Partial Class FrmStart
         Me.PlnMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PlnMenu.Location = New System.Drawing.Point(0, 0)
         Me.PlnMenu.Name = "PlnMenu"
-        Me.PlnMenu.Size = New System.Drawing.Size(220, 450)
+        Me.PlnMenu.Size = New System.Drawing.Size(188, 546)
         Me.PlnMenu.TabIndex = 0
         '
         'Button3
@@ -152,9 +159,9 @@ Partial Class FrmStart
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Location = New System.Drawing.Point(0, 198)
+        Me.Button3.Location = New System.Drawing.Point(0, 294)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(220, 40)
+        Me.Button3.Size = New System.Drawing.Size(188, 40)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "No abrir xd"
         Me.Button3.UseVisualStyleBackColor = True
@@ -167,32 +174,35 @@ Partial Class FrmStart
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button2.Location = New System.Drawing.Point(0, 152)
+        Me.Button2.Location = New System.Drawing.Point(0, 248)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(220, 40)
+        Me.Button2.Size = New System.Drawing.Size(188, 40)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Botón de prueba"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.PbLogo)
+        Me.Panel1.Controls.Add(Me.Pbuser)
+        Me.Panel1.Controls.Add(Me.Lblem)
+        Me.Panel1.Controls.Add(Me.LblName)
+        Me.Panel1.Controls.Add(Me.LblPos)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 100)
+        Me.Panel1.Size = New System.Drawing.Size(188, 178)
         Me.Panel1.TabIndex = 0
         '
         'PbLogo
         '
-        Me.PbLogo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PbLogo.Image = Global.SB.My.Resources.Resources.icons8_teacher_96px
-        Me.PbLogo.Location = New System.Drawing.Point(0, 0)
+        Me.PbLogo.Location = New System.Drawing.Point(188, 37)
         Me.PbLogo.Name = "PbLogo"
-        Me.PbLogo.Size = New System.Drawing.Size(220, 100)
+        Me.PbLogo.Size = New System.Drawing.Size(188, 100)
         Me.PbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PbLogo.TabIndex = 0
         Me.PbLogo.TabStop = False
+        Me.PbLogo.Visible = False
         '
         'BtnBolFrm2
         '
@@ -202,9 +212,9 @@ Partial Class FrmStart
         Me.BtnBolFrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBolFrm2.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBolFrm2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BtnBolFrm2.Location = New System.Drawing.Point(0, 106)
+        Me.BtnBolFrm2.Location = New System.Drawing.Point(0, 202)
         Me.BtnBolFrm2.Name = "BtnBolFrm2"
-        Me.BtnBolFrm2.Size = New System.Drawing.Size(220, 40)
+        Me.BtnBolFrm2.Size = New System.Drawing.Size(188, 40)
         Me.BtnBolFrm2.TabIndex = 0
         Me.BtnBolFrm2.Text = "Boletas"
         Me.BtnBolFrm2.UseVisualStyleBackColor = True
@@ -212,25 +222,14 @@ Partial Class FrmStart
         'PanelFrms
         '
         Me.PanelFrms.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.PanelFrms.Controls.Add(Me.PbLogo)
         Me.PanelFrms.Controls.Add(Me.Label2)
         Me.PanelFrms.Controls.Add(Me.Label1)
         Me.PanelFrms.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFrms.Location = New System.Drawing.Point(0, 0)
         Me.PanelFrms.Name = "PanelFrms"
-        Me.PanelFrms.Size = New System.Drawing.Size(800, 450)
+        Me.PanelFrms.Size = New System.Drawing.Size(955, 546)
         Me.PanelFrms.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto Condensed", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label1.Location = New System.Drawing.Point(290, 152)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(422, 115)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Logo DXD"
         '
         'Label2
         '
@@ -238,18 +237,87 @@ Partial Class FrmStart
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Roboto Condensed", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label2.Location = New System.Drawing.Point(283, 267)
+        Me.Label2.Location = New System.Drawing.Point(438, 363)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(429, 88)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Para empezar presiones las " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "secciones de la izquierda"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Roboto Condensed", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label1.Location = New System.Drawing.Point(504, 248)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(260, 115)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Logo "
+        '
+        'BtnCls
+        '
+        Me.BtnCls.FlatAppearance.BorderSize = 0
+        Me.BtnCls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.BtnCls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.BtnCls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCls.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCls.ForeColor = System.Drawing.Color.Gainsboro
+        Me.BtnCls.Location = New System.Drawing.Point(0, 494)
+        Me.BtnCls.Name = "BtnCls"
+        Me.BtnCls.Size = New System.Drawing.Size(188, 40)
+        Me.BtnCls.TabIndex = 3
+        Me.BtnCls.Text = "Cerrar Sesión"
+        Me.BtnCls.UseVisualStyleBackColor = True
+        '
+        'LblPos
+        '
+        Me.LblPos.AutoSize = True
+        Me.LblPos.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPos.ForeColor = System.Drawing.Color.Gainsboro
+        Me.LblPos.Location = New System.Drawing.Point(21, 97)
+        Me.LblPos.Name = "LblPos"
+        Me.LblPos.Size = New System.Drawing.Size(37, 13)
+        Me.LblPos.TabIndex = 0
+        Me.LblPos.Text = "Puesto"
+        '
+        'LblName
+        '
+        Me.LblName.AutoSize = True
+        Me.LblName.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblName.ForeColor = System.Drawing.Color.Gainsboro
+        Me.LblName.Location = New System.Drawing.Point(21, 124)
+        Me.LblName.Name = "LblName"
+        Me.LblName.Size = New System.Drawing.Size(41, 13)
+        Me.LblName.TabIndex = 1
+        Me.LblName.Text = "Nombre"
+        '
+        'Lblem
+        '
+        Me.Lblem.AutoSize = True
+        Me.Lblem.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblem.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblem.Location = New System.Drawing.Point(21, 152)
+        Me.Lblem.Name = "Lblem"
+        Me.Lblem.Size = New System.Drawing.Size(31, 13)
+        Me.Lblem.TabIndex = 2
+        Me.Lblem.Text = "Email"
+        '
+        'Pbuser
+        '
+        Me.Pbuser.Location = New System.Drawing.Point(12, 12)
+        Me.Pbuser.Name = "Pbuser"
+        Me.Pbuser.Size = New System.Drawing.Size(92, 82)
+        Me.Pbuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Pbuser.TabIndex = 2
+        Me.Pbuser.TabStop = False
         '
         'FrmStart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(955, 546)
         Me.Controls.Add(Me.PanelContenedor)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(550, 400)
@@ -265,9 +333,11 @@ Partial Class FrmStart
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PlnMenu.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFrms.ResumeLayout(False)
         Me.PanelFrms.PerformLayout()
+        CType(Me.Pbuser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -288,4 +358,9 @@ Partial Class FrmStart
     Friend WithEvents LblTop As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents BtnCls As Button
+    Friend WithEvents Lblem As Label
+    Friend WithEvents LblName As Label
+    Friend WithEvents LblPos As Label
+    Friend WithEvents Pbuser As PictureBox
 End Class
