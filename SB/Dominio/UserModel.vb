@@ -1,7 +1,12 @@
 ﻿Imports Acceso_de_Datos
 Imports CapaComún
 Public Class UserModel
-    Dim userDao As New UserDao()
+    Dim userDao As New UserDao
+    Public Function recoverPassword(requestingUser As String) As String
+        Return userDao.requestUserPassword(requestingUser)
+
+    End Function
+
     Public Function Login(user As String, pass As String) As Boolean
         Return userDao.Login(user, pass)
     End Function

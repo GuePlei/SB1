@@ -4,6 +4,40 @@ Imports CapaComún
 
 Public Class UserDao
     Inherits ConnectionToSql
+    Public Function requestUserPassword(ByVal requestingUser As String) As String
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand
+                command.Connection = connection
+                command.CommandText = "select * from Users where loginName=@user or Email=@email"
+                command.Parameters.AddWithValue("@user", requestingUser)
+                command.Parameters.AddWithValue("@email", requestingUser)
+                command.CommandType = CommandType.Text
+
+                Dim reader As SqlDataReader = command.ExecuteReader()
+
+                If reader.Read = True Then
+                    Dim userName As String = reader.GetString(3) & " " & reader.GetString(4)
+                    Dim userMail As String = reader.GetString(6)
+                    Dim userPassword As String = reader.GetString(2)
+
+                    Dim SystemSupport = New SystemSupportMail()
+                    SystemSupport.sendMail(
+                        subject:="Sistema: Recuperación de constraseña Solicitada",
+                         body:="Hola " & userName & vbNewLine & "Has solicitado recuperar tu contraseña." & vbNewLine &
+                         "Tu contraseña es: " & userPassword & vbNewLine &
+                         "Le pedimos que cambie su contraseña actual una vez acceda al sistema.",
+                         receiverMail:=New List(Of String) From {userMail})
+                    Return "Hola " & userName & vbNewLine & "Has solicitado recuperar tu contraseña." & vbNewLine &
+                        "Revisa tu correo electrónico: " & userMail & vbNewLine &
+                        "Le pedimos que cambie su contraseña actual una vez acceda al sistema."
+                Else
+                    Return "No existe esa dirección de correo/usuario no esta registrada en el sistema."
+                End If
+            End Using
+
+        End Using
+    End Function
     Public Function Login(user As String, pass As String) As Boolean
         Using Connection = GetConnection()
             Connection.Open()

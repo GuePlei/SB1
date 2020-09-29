@@ -28,3 +28,4 @@ C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.exe.conf
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.dll
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.pdb
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.xml
+C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Recuperar_Contraseña.resources

@@ -73,6 +73,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmailServices\EmailMasterServer.vb" />
+    <Compile Include="EmailServices\SystemSupportMail.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -88,8 +90,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SQLConnection.vb" />
-    <Compile Include="UserDao.vb" />
+    <Compile Include="SqlServerDB\SQLConnection.vb" />
+    <Compile Include="SqlServerDB\UserDao.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
