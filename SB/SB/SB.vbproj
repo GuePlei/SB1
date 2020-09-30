@@ -48,7 +48,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icons8_agreement_3.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\icons8_agreement_3.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
@@ -208,7 +208,7 @@
     <None Include="Resources\icons8_home_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icons8_agreement_3.ico" />
+    <Content Include="Resources\icons8_agreement_3.ico" />
     <None Include="Resources\icons8_invisible_24px.png" />
     <None Include="Resources\icons8_teacher_124px.png" />
     <None Include="Resources\icons8_eye_24px.png" />

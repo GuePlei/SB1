@@ -32,7 +32,8 @@ Public Class UserDao
                         "Revisa tu correo electrónico: " & userMail & vbNewLine &
                         "Le pedimos que cambie su contraseña actual una vez acceda al sistema."
                 Else
-                    Return "No existe esa dirección de correo/usuario no esta registrada en el sistema."
+                    Return "Esa dirección de correo/usuario" & vbNewLine & "no esta registrada en el sistema."
+
                 End If
             End Using
 
