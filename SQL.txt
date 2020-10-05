@@ -14,7 +14,7 @@ Email nvarchar (150) not null
 )
 
 insert into Users values ('admin','admin','Andrey','Guerrero','Administrador','guerreroandrey@gmail.com')
-insert into Users values ('Garita','123123','Axel','Garita','Manager','agarita@gmail.com')
-insert into Users values ('Steven','321321','Steven','Otatola','CEO','sotarola@gmail.com')
+insert into Users values ('Garita','123123','Axel','Garita','Manager','axel.garita.b@gmail.com')
+insert into Users values ('Steven','321321','Steven','Otatola','CEO','stevenotarola44@gmail.com')
 
 select * from Users
