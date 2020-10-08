@@ -8,3 +8,13 @@ C:\Users\guerr\source\repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.dll
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.xml
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.pdb
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.vbprojAssemblyReference.cache
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\bin\Debug\CapaComún.dll
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\bin\Debug\CapaComún.pdb
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\bin\Debug\CapaComún.xml
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.vbprojAssemblyReference.cache
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.Resources.resources
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.vbproj.GenerateResource.cache
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.vbproj.CoreCompileInputs.cache
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.dll
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.xml
+C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.pdb

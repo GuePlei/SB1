@@ -84,4 +84,12 @@ Public Class LoginForm
         Dim Recuperar_Contraseña As New Recuperar_Contraseña()
         Recuperar_Contraseña.ShowDialog()
     End Sub
+
+    Private Sub TxtUser_TextChanged(sender As Object, e As EventArgs) Handles TxtUser.TextChanged
+
+    End Sub
+
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

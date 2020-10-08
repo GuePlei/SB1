@@ -90,11 +90,11 @@ Partial Class LoginForm
         'LblUsername
         '
         Me.LblUsername.AutoSize = True
-        Me.LblUsername.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUsername.ForeColor = System.Drawing.Color.Gainsboro
         Me.LblUsername.Location = New System.Drawing.Point(26, 249)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(58, 19)
+        Me.LblUsername.Size = New System.Drawing.Size(64, 20)
         Me.LblUsername.TabIndex = 2
         Me.LblUsername.Text = "Usuario"
         '
@@ -102,44 +102,44 @@ Partial Class LoginForm
         '
         Me.TxtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtUser.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtUser.ForeColor = System.Drawing.Color.White
         Me.TxtUser.Location = New System.Drawing.Point(30, 271)
         Me.TxtUser.Name = "TxtUser"
-        Me.TxtUser.Size = New System.Drawing.Size(350, 27)
+        Me.TxtUser.Size = New System.Drawing.Size(350, 26)
         Me.TxtUser.TabIndex = 0
         '
         'TxtPass
         '
         Me.TxtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.TxtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtPass.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPass.ForeColor = System.Drawing.Color.White
         Me.TxtPass.Location = New System.Drawing.Point(30, 325)
         Me.TxtPass.Name = "TxtPass"
         Me.TxtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtPass.Size = New System.Drawing.Size(350, 27)
+        Me.TxtPass.Size = New System.Drawing.Size(350, 26)
         Me.TxtPass.TabIndex = 1
         '
         'LblPass
         '
         Me.LblPass.AutoSize = True
-        Me.LblPass.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPass.ForeColor = System.Drawing.Color.Gainsboro
         Me.LblPass.Location = New System.Drawing.Point(26, 303)
         Me.LblPass.Name = "LblPass"
-        Me.LblPass.Size = New System.Drawing.Size(71, 19)
+        Me.LblPass.Size = New System.Drawing.Size(78, 20)
         Me.LblPass.TabIndex = 4
         Me.LblPass.Text = "Password"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.ForeColor = System.Drawing.Color.Gainsboro
         Me.CheckBox1.Location = New System.Drawing.Point(30, 363)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(89, 19)
+        Me.CheckBox1.Size = New System.Drawing.Size(106, 20)
         Me.CheckBox1.TabIndex = 7
         Me.CheckBox1.Text = "Recuerdame"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -150,7 +150,7 @@ Partial Class LoginForm
         Me.BtnLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.BtnLog.FlatAppearance.BorderSize = 0
         Me.BtnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLog.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLog.ForeColor = System.Drawing.Color.Gainsboro
         Me.BtnLog.Location = New System.Drawing.Point(30, 460)
         Me.BtnLog.Name = "BtnLog"
@@ -182,11 +182,11 @@ Partial Class LoginForm
         '
         Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Silver
         Me.LinkLabel1.Location = New System.Drawing.Point(146, 619)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(117, 15)
+        Me.LinkLabel1.Size = New System.Drawing.Size(138, 16)
         Me.LinkLabel1.TabIndex = 4
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Olvidó la contraseña?"

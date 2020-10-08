@@ -31,19 +31,23 @@ Partial Class FrmStart
         Me.BtnMini = New System.Windows.Forms.PictureBox()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
         Me.PlnMenu = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.BtnCls = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PbLogo = New System.Windows.Forms.PictureBox()
+        Me.Pbuser = New System.Windows.Forms.PictureBox()
+        Me.Lblem = New System.Windows.Forms.Label()
+        Me.LblName = New System.Windows.Forms.Label()
+        Me.LblPos = New System.Windows.Forms.Label()
         Me.BtnBolFrm2 = New System.Windows.Forms.Button()
         Me.PanelFrms = New System.Windows.Forms.Panel()
+        Me.PbLogo = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnCls = New System.Windows.Forms.Button()
-        Me.LblPos = New System.Windows.Forms.Label()
-        Me.LblName = New System.Windows.Forms.Label()
-        Me.Lblem = New System.Windows.Forms.Label()
-        Me.Pbuser = New System.Windows.Forms.PictureBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PanelContenedor.SuspendLayout()
         Me.PlnHead.SuspendLayout()
         CType(Me.BtnHome, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,9 +56,9 @@ Partial Class FrmStart
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PlnMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelFrms.SuspendLayout()
         CType(Me.Pbuser, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelFrms.SuspendLayout()
+        CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelContenedor
@@ -86,7 +90,7 @@ Partial Class FrmStart
         'LblTop
         '
         Me.LblTop.AutoSize = True
-        Me.LblTop.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTop.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTop.ForeColor = System.Drawing.Color.Gainsboro
         Me.LblTop.Location = New System.Drawing.Point(7, 13)
         Me.LblTop.Name = "LblTop"
@@ -140,6 +144,10 @@ Partial Class FrmStart
         'PlnMenu
         '
         Me.PlnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.PlnMenu.Controls.Add(Me.Panel5)
+        Me.PlnMenu.Controls.Add(Me.Panel4)
+        Me.PlnMenu.Controls.Add(Me.Panel2)
+        Me.PlnMenu.Controls.Add(Me.Panel3)
         Me.PlnMenu.Controls.Add(Me.BtnCls)
         Me.PlnMenu.Controls.Add(Me.Button3)
         Me.PlnMenu.Controls.Add(Me.Button2)
@@ -151,17 +159,56 @@ Partial Class FrmStart
         Me.PlnMenu.Size = New System.Drawing.Size(188, 546)
         Me.PlnMenu.TabIndex = 0
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Red
+        Me.Panel4.Location = New System.Drawing.Point(0, 278)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(10, 32)
+        Me.Panel4.TabIndex = 6
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(0, 240)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(10, 32)
+        Me.Panel2.TabIndex = 5
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Panel3.Location = New System.Drawing.Point(0, 202)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(10, 32)
+        Me.Panel3.TabIndex = 4
+        '
+        'BtnCls
+        '
+        Me.BtnCls.FlatAppearance.BorderSize = 0
+        Me.BtnCls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.BtnCls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.BtnCls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCls.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCls.ForeColor = System.Drawing.Color.Gainsboro
+        Me.BtnCls.Location = New System.Drawing.Point(0, 494)
+        Me.BtnCls.Name = "BtnCls"
+        Me.BtnCls.Size = New System.Drawing.Size(185, 40)
+        Me.BtnCls.TabIndex = 3
+        Me.BtnCls.Text = "Cerrar Sesión"
+        Me.BtnCls.UseVisualStyleBackColor = True
+        '
         'Button3
         '
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Location = New System.Drawing.Point(0, 294)
+        Me.Button3.Location = New System.Drawing.Point(3, 278)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(188, 40)
+        Me.Button3.Size = New System.Drawing.Size(182, 32)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "No abrir xd"
         Me.Button3.UseVisualStyleBackColor = True
@@ -170,13 +217,13 @@ Partial Class FrmStart
         '
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button2.Location = New System.Drawing.Point(0, 248)
+        Me.Button2.Location = New System.Drawing.Point(3, 240)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(188, 40)
+        Me.Button2.Size = New System.Drawing.Size(182, 32)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Botón de prueba"
         Me.Button2.UseVisualStyleBackColor = True
@@ -193,28 +240,59 @@ Partial Class FrmStart
         Me.Panel1.Size = New System.Drawing.Size(188, 178)
         Me.Panel1.TabIndex = 0
         '
-        'PbLogo
+        'Pbuser
         '
-        Me.PbLogo.Image = Global.SB.My.Resources.Resources.icons8_teacher_96px
-        Me.PbLogo.Location = New System.Drawing.Point(188, 37)
-        Me.PbLogo.Name = "PbLogo"
-        Me.PbLogo.Size = New System.Drawing.Size(188, 100)
-        Me.PbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PbLogo.TabIndex = 0
-        Me.PbLogo.TabStop = False
-        Me.PbLogo.Visible = False
+        Me.Pbuser.Location = New System.Drawing.Point(12, 12)
+        Me.Pbuser.Name = "Pbuser"
+        Me.Pbuser.Size = New System.Drawing.Size(92, 82)
+        Me.Pbuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Pbuser.TabIndex = 2
+        Me.Pbuser.TabStop = False
+        '
+        'Lblem
+        '
+        Me.Lblem.AutoSize = True
+        Me.Lblem.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblem.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblem.Location = New System.Drawing.Point(21, 152)
+        Me.Lblem.Name = "Lblem"
+        Me.Lblem.Size = New System.Drawing.Size(32, 13)
+        Me.Lblem.TabIndex = 2
+        Me.Lblem.Text = "Email"
+        '
+        'LblName
+        '
+        Me.LblName.AutoSize = True
+        Me.LblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblName.ForeColor = System.Drawing.Color.Gainsboro
+        Me.LblName.Location = New System.Drawing.Point(21, 124)
+        Me.LblName.Name = "LblName"
+        Me.LblName.Size = New System.Drawing.Size(44, 13)
+        Me.LblName.TabIndex = 1
+        Me.LblName.Text = "Nombre"
+        '
+        'LblPos
+        '
+        Me.LblPos.AutoSize = True
+        Me.LblPos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPos.ForeColor = System.Drawing.Color.Gainsboro
+        Me.LblPos.Location = New System.Drawing.Point(21, 97)
+        Me.LblPos.Name = "LblPos"
+        Me.LblPos.Size = New System.Drawing.Size(40, 13)
+        Me.LblPos.TabIndex = 0
+        Me.LblPos.Text = "Puesto"
         '
         'BtnBolFrm2
         '
         Me.BtnBolFrm2.FlatAppearance.BorderSize = 0
         Me.BtnBolFrm2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.BtnBolFrm2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
+        Me.BtnBolFrm2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.BtnBolFrm2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnBolFrm2.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBolFrm2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBolFrm2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BtnBolFrm2.Location = New System.Drawing.Point(0, 202)
+        Me.BtnBolFrm2.Location = New System.Drawing.Point(3, 202)
         Me.BtnBolFrm2.Name = "BtnBolFrm2"
-        Me.BtnBolFrm2.Size = New System.Drawing.Size(188, 40)
+        Me.BtnBolFrm2.Size = New System.Drawing.Size(182, 32)
         Me.BtnBolFrm2.TabIndex = 0
         Me.BtnBolFrm2.Text = "Boletas"
         Me.BtnBolFrm2.UseVisualStyleBackColor = True
@@ -231,86 +309,48 @@ Partial Class FrmStart
         Me.PanelFrms.Size = New System.Drawing.Size(955, 546)
         Me.PanelFrms.TabIndex = 0
         '
+        'PbLogo
+        '
+        Me.PbLogo.Image = Global.SB.My.Resources.Resources.icons8_teacher_96px
+        Me.PbLogo.Location = New System.Drawing.Point(188, 37)
+        Me.PbLogo.Name = "PbLogo"
+        Me.PbLogo.Size = New System.Drawing.Size(188, 100)
+        Me.PbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PbLogo.TabIndex = 0
+        Me.PbLogo.TabStop = False
+        Me.PbLogo.Visible = False
+        '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Roboto Condensed", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label2.Location = New System.Drawing.Point(438, 363)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(429, 88)
+        Me.Label2.Size = New System.Drawing.Size(493, 84)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Para empezar presiones las " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "secciones de la izquierda"
         '
         'Label1
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto Condensed", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label1.Location = New System.Drawing.Point(504, 248)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(260, 115)
+        Me.Label1.Size = New System.Drawing.Size(283, 108)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Logo "
         '
-        'BtnCls
+        'Panel5
         '
-        Me.BtnCls.FlatAppearance.BorderSize = 0
-        Me.BtnCls.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
-        Me.BtnCls.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
-        Me.BtnCls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCls.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCls.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BtnCls.Location = New System.Drawing.Point(0, 494)
-        Me.BtnCls.Name = "BtnCls"
-        Me.BtnCls.Size = New System.Drawing.Size(188, 40)
-        Me.BtnCls.TabIndex = 3
-        Me.BtnCls.Text = "Cerrar Sesión"
-        Me.BtnCls.UseVisualStyleBackColor = True
-        '
-        'LblPos
-        '
-        Me.LblPos.AutoSize = True
-        Me.LblPos.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPos.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblPos.Location = New System.Drawing.Point(21, 97)
-        Me.LblPos.Name = "LblPos"
-        Me.LblPos.Size = New System.Drawing.Size(37, 13)
-        Me.LblPos.TabIndex = 0
-        Me.LblPos.Text = "Puesto"
-        '
-        'LblName
-        '
-        Me.LblName.AutoSize = True
-        Me.LblName.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblName.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblName.Location = New System.Drawing.Point(21, 124)
-        Me.LblName.Name = "LblName"
-        Me.LblName.Size = New System.Drawing.Size(41, 13)
-        Me.LblName.TabIndex = 1
-        Me.LblName.Text = "Nombre"
-        '
-        'Lblem
-        '
-        Me.Lblem.AutoSize = True
-        Me.Lblem.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblem.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblem.Location = New System.Drawing.Point(21, 152)
-        Me.Lblem.Name = "Lblem"
-        Me.Lblem.Size = New System.Drawing.Size(31, 13)
-        Me.Lblem.TabIndex = 2
-        Me.Lblem.Text = "Email"
-        '
-        'Pbuser
-        '
-        Me.Pbuser.Location = New System.Drawing.Point(12, 12)
-        Me.Pbuser.Name = "Pbuser"
-        Me.Pbuser.Size = New System.Drawing.Size(92, 82)
-        Me.Pbuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Pbuser.TabIndex = 2
-        Me.Pbuser.TabStop = False
+        Me.Panel5.BackColor = System.Drawing.Color.Red
+        Me.Panel5.Location = New System.Drawing.Point(0, 494)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(10, 40)
+        Me.Panel5.TabIndex = 7
         '
         'FrmStart
         '
@@ -334,10 +374,10 @@ Partial Class FrmStart
         Me.PlnMenu.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pbuser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFrms.ResumeLayout(False)
         Me.PanelFrms.PerformLayout()
-        CType(Me.Pbuser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -363,4 +403,8 @@ Partial Class FrmStart
     Friend WithEvents LblName As Label
     Friend WithEvents LblPos As Label
     Friend WithEvents Pbuser As PictureBox
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel5 As Panel
 End Class

@@ -17,3 +17,22 @@ C:\Users\guerr\source\repos\GuePlei\SB1\SB\Dominio\obj\Debug\Dominio.pdb
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\Dominio\bin\Debug\CapaComún.dll
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\Dominio\bin\Debug\CapaComún.pdb
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\Dominio\bin\Debug\CapaComún.xml
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Dominio.exe.config
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Dominio.exe
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Dominio.xml
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Acceso de Datos.exe
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\CapaComún.dll
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Acceso de Datos.pdb
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Acceso de Datos.xml
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\Acceso de Datos.exe.config
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\CapaComún.pdb
+C:\Users\Xayath\Desktop\peter\SB\Dominio\bin\Debug\CapaComún.xml
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.vbprojAssemblyReference.cache
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.Resources.resources
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.vbproj.GenerateResource.cache
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.vbproj.CoreCompileInputs.cache
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.vbproj.CopyComplete
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.exe
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.xml
+C:\Users\Xayath\Desktop\peter\SB\Dominio\obj\Debug\Dominio.pdb
