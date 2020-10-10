@@ -18,7 +18,7 @@
         Subpanel.Visible = True
     End Sub
 
-    Private Sub tipo2_Click(sender As Object, e As EventArgs) Handles tipo2.Click
+    Private Sub Tipo2_Click(sender As Object, e As EventArgs) Handles tipo2.Click
         Subpanel.Visible = False
         Tipobole.Text = tipo2.Text
     End Sub
@@ -27,12 +27,12 @@
 
     End Sub
 
-    Private Sub tipo3_Click(sender As Object, e As EventArgs) Handles tipo3.Click
+    Private Sub Tipo3_Click(sender As Object, e As EventArgs) Handles tipo3.Click
         Subpanel.Visible = False
         Tipobole.Text = tipo3.Text
     End Sub
 
-    Private Sub tipo1_Click(sender As Object, e As EventArgs) Handles tipo1.Click
+    Private Sub Tipo1_Click(sender As Object, e As EventArgs) Handles tipo1.Click
         Subpanel.Visible = False
         Tipobole.Text = tipo1.Text
     End Sub
@@ -41,17 +41,17 @@
         Subpanel2.Visible = True
     End Sub
 
-    Private Sub boleta1_Click(sender As Object, e As EventArgs) Handles boleta1.Click
+    Private Sub Boleta1_Click(sender As Object, e As EventArgs) Handles boleta1.Click
         Subpanel2.Visible = False
         Boleta.Text = boleta1.Text
     End Sub
 
-    Private Sub boleta2_Click(sender As Object, e As EventArgs) Handles boleta2.Click
+    Private Sub Boleta2_Click(sender As Object, e As EventArgs) Handles boleta2.Click
         Subpanel2.Visible = False
         Boleta.Text = boleta2.Text
     End Sub
 
-    Private Sub boleta3_Click(sender As Object, e As EventArgs) Handles boleta3.Click
+    Private Sub Boleta3_Click(sender As Object, e As EventArgs) Handles boleta3.Click
         Subpanel2.Visible = False
         Boleta.Text = boleta3.Text
     End Sub

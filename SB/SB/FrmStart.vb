@@ -32,14 +32,14 @@ Public Class FrmStart
         Me.WindowState = FormWindowState.Minimized
     End Sub
     'Ventana de titulo
-    Private Sub loadUser()
+    Private Sub LoadUser()
         LblName.Text = ActiveUser.firstName + ", " + ActiveUser.lastName
         Lblem.Text = ActiveUser.email
         LblPos.Text = ActiveUser.position
     End Sub
-    Private Sub security()
+    Private Sub Security()
         Dim user As New UserModel()
-        If user.anyMethod(ActiveUser.idUSer) = False Then
+        If user.AnyMethod(ActiveUser.idUser) = False Then
             MessageBox.Show("Error")
             Me.Close()
         End If
@@ -48,22 +48,12 @@ Public Class FrmStart
         security()
         loadUser()
         administraciondepermisos()
-        BtnHome.Visible = False
-        Me.Text = String.Empty
-        Me.ControlBox = False
-        Me.DoubleBuffered = True
-        Me.MaximizedBounds = Screen.PrimaryScreen.WorkingArea
+
+
     End Sub
-    'Devuelve la capacidad de resize de la ventana
-    Private Sub FrmStart_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
-        If WindowState = FormWindowState.Maximized Then
-            FormBorderStyle = FormBorderStyle.None
-        Else
-            FormBorderStyle = FormBorderStyle.Sizable
-        End If
-    End Sub
+
     'Función para maximizar y cambiar iconos
-    Private Sub winstate()
+    Private Sub Winstate()
         If WindowState = FormWindowState.Normal Then
             WindowState = FormWindowState.Maximized
             BtnMxi.Image = My.Resources.icons8_restore_window_24px
@@ -86,6 +76,39 @@ Public Class FrmStart
         End If
 
     End Sub
+
+    'RESIZE DEL FORMULARIO- CAMBIAR TAMAÑO'
+    Dim cGrip As Integer = 10
+    Protected Overrides Sub WndProc(ByRef m As Message)
+        If (m.Msg = 132) Then
+            Dim pos As Point = New Point((m.LParam.ToInt32 And 65535), (m.LParam.ToInt32 + 16))
+            pos = Me.PointToClient(pos)
+            If ((pos.X _
+                    >= (Me.ClientSize.Width - cGrip)) _
+                    AndAlso (pos.Y _
+                    >= (Me.ClientSize.Height - cGrip))) Then
+                m.Result = CType(17, IntPtr)
+                Return
+            End If
+        End If
+        MyBase.WndProc(m)
+    End Sub
+    '----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL' 
+    Dim sizeGripRectangle As Rectangle
+    Dim tolerance As Integer = 15
+    Protected Overrides Sub OnSizeChanged(ByVal e As EventArgs)
+        MyBase.OnSizeChanged(e)
+        Dim region = New Region(New Rectangle(0, 0, Me.ClientRectangle.Width, Me.ClientRectangle.Height))
+        sizeGripRectangle = New Rectangle((Me.ClientRectangle.Width - tolerance), (Me.ClientRectangle.Height - tolerance), tolerance, tolerance)
+        region.Exclude(sizeGripRectangle)
+        Me.PanelContenedor.Region = region
+        Me.Invalidate()
+    End Sub
+    '----------------COLOR Y GRIP DE RECTANGULO INFERIOR'
+    Protected Overrides Sub OnPaint(ByVal e As PaintEventArgs)
+        Dim blueBrush As SolidBrush = New SolidBrush(Color.FromArgb(34, 33, 74))
+        e.Graphics.FillRectangle(blueBrush, sizeGripRectangle)
+    End Sub
 #End Region
 #Region "Botones para el contenedor del formulario"
     'Abrir forms en el panel contenedor
@@ -101,12 +124,12 @@ Public Class FrmStart
         PanelContenedor.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
-        '  LblTop.Text = childForm.Text
+        'LblTop.Text = childForm.Text
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnBolFrm2.Click
         OpenChildForm(New Boletas)
     End Sub
-    Private Sub BtnHome_Click(sender As Object, e As EventArgs) Handles BtnHome.Click
+    Private Sub BtnHome_Click(sender As Object, e As EventArgs)
         OpenChildForm(New FrmStart)
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -116,7 +139,7 @@ Public Class FrmStart
         OpenChildForm(New Inicio)
     End Sub
 #End Region
-    Private Sub administraciondepermisos()
+    Private Sub Administraciondepermisos()
         If ActiveUser.position = Puestos.Manager Then
             Button3.Enabled = False
 
@@ -125,5 +148,9 @@ Public Class FrmStart
             BtnBolFrm2.Enabled = False
             Button2.Enabled = False
         End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        OpenChildForm(New Frmeditarperfil)
     End Sub
 End Class

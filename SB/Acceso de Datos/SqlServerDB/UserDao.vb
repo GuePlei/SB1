@@ -4,7 +4,25 @@ Imports CapaComún
 
 Public Class UserDao
     Inherits ConnectionToSql
-    Public Function requestUserPassword(ByVal requestingUser As String) As String
+    Public Sub editProfile(id, user, pass, name, lastName, mail)
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+                command.CommandText = "update Users set LoginName=@user, Password=@pass, FirstName=@name, LastName=@lastName, Email=@mail where UserID=@id"
+                command.Parameters.AddWithValue("@user", user)
+                command.Parameters.AddWithValue("@pass", pass)
+                command.Parameters.AddWithValue("@name", name)
+                command.Parameters.AddWithValue("@lastName", lastName)
+                command.Parameters.AddWithValue("@mail", mail)
+                command.Parameters.AddWithValue("@id", id)
+                command.CommandType = CommandType.Text
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+    End Sub
+
+    Public Function RequestUserPassword(ByVal requestingUser As String) As String
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand
@@ -47,11 +65,14 @@ Public Class UserDao
                 Command.CommandText = "select * from users where loginName=@user and password=@pass"
                 Command.Parameters.AddWithValue("@user", user)
                 Command.Parameters.AddWithValue("@pass", pass)
+
                 Command.CommandType = CommandType.Text
                 Dim reader = Command.ExecuteReader()
                 If reader.HasRows Then
                     While reader.Read
-                        ActiveUser.idUSer = reader.GetInt32(0)
+                        ActiveUser.idUser = reader.GetInt32(0)
+                        ActiveUser.LoginName = reader.GetString(1)
+                        ActiveUser.Password = reader.GetString(2)
                         ActiveUser.firstName = reader.GetString(3)
                         ActiveUser.lastName = reader.GetString(4)
                         ActiveUser.position = reader.GetString(5)
@@ -65,7 +86,7 @@ Public Class UserDao
             End Using
         End Using
     End Function
-    Public Function existsUser(id As Integer) As Boolean
+    Public Function ExistsUser(id As Integer) As Boolean
         Using Connection = GetConnection()
             Connection.Open()
             Using Command = New SqlCommand
@@ -83,7 +104,7 @@ Public Class UserDao
             End Using
         End Using
     End Function
-    Public Sub anyMethod3()
+    Public Sub AnyMethod3()
         If ActiveUser.position = Puestos.Manager Then
             'codigo para el manager
         End If

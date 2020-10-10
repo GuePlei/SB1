@@ -28,3 +28,18 @@ C:\Users\Xayath\Desktop\peter\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbpro
 C:\Users\Xayath\Desktop\peter\SB\Acceso de Datos\obj\Debug\Acceso de Datos.exe
 C:\Users\Xayath\Desktop\peter\SB\Acceso de Datos\obj\Debug\Acceso de Datos.xml
 C:\Users\Xayath\Desktop\peter\SB\Acceso de Datos\obj\Debug\Acceso de Datos.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\Acceso de Datos.exe.config
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\Acceso de Datos.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\Acceso de Datos.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\Acceso de Datos.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\CapaComún.dll
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\CapaComún.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\bin\Debug\CapaComún.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbprojAssemblyReference.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso_de_Datos.Resources.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.GenerateResource.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.CoreCompileInputs.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.CopyComplete
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.pdb

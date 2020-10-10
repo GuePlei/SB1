@@ -47,6 +47,16 @@ SB
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:SB.My.Resources.Resources.icons8_male_user_126px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.icons8_male_user_256px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SB.My.Resources.Resources.icons8_maximize_window_24px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

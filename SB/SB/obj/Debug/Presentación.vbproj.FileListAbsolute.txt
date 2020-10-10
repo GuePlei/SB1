@@ -1,0 +1,32 @@
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe.config
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\SB.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\SB.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.dll
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Dominio.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\CapaComún.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Dominio.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Dominio.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Dominio.exe.config
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.exe.config
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Presentación.vbprojAssemblyReference.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmStart.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Boletas.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Form3.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Inicio.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.LoginForm.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Resources.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Recuperar_Contraseña.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Presentación.vbproj.GenerateResource.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Presentación.vbproj.CoreCompileInputs.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Presentación.vbproj.CopyComplete
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.exe
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Frmeditarperfil.resources

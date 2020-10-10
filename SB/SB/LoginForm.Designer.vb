@@ -52,15 +52,17 @@ Partial Class LoginForm
         Me.PanelTitulo.Controls.Add(Me.BtnClose)
         Me.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelTitulo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelTitulo.Name = "PanelTitulo"
-        Me.PanelTitulo.Size = New System.Drawing.Size(400, 40)
+        Me.PanelTitulo.Size = New System.Drawing.Size(533, 49)
         Me.PanelTitulo.TabIndex = 0
         '
         'BtnMini
         '
         Me.BtnMini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnMini.Image = Global.SB.My.Resources.Resources.icons8_minimize_window_24px
-        Me.BtnMini.Location = New System.Drawing.Point(343, 3)
+        Me.BtnMini.Location = New System.Drawing.Point(457, 4)
+        Me.BtnMini.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnMini.Name = "BtnMini"
         Me.BtnMini.Size = New System.Drawing.Size(24, 24)
         Me.BtnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -71,7 +73,8 @@ Partial Class LoginForm
         '
         Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
-        Me.BtnClose.Location = New System.Drawing.Point(373, 3)
+        Me.BtnClose.Location = New System.Drawing.Point(497, 4)
+        Me.BtnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnClose.Name = "BtnClose"
         Me.BtnClose.Size = New System.Drawing.Size(24, 24)
         Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -82,19 +85,21 @@ Partial Class LoginForm
         '
         Me.PanelBottom.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelBottom.Location = New System.Drawing.Point(0, 665)
+        Me.PanelBottom.Location = New System.Drawing.Point(0, 819)
+        Me.PanelBottom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelBottom.Name = "PanelBottom"
-        Me.PanelBottom.Size = New System.Drawing.Size(400, 15)
+        Me.PanelBottom.Size = New System.Drawing.Size(533, 18)
         Me.PanelBottom.TabIndex = 1
         '
         'LblUsername
         '
         Me.LblUsername.AutoSize = True
-        Me.LblUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUsername.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblUsername.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblUsername.Location = New System.Drawing.Point(26, 249)
+        Me.LblUsername.Location = New System.Drawing.Point(35, 306)
+        Me.LblUsername.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(64, 20)
+        Me.LblUsername.Size = New System.Drawing.Size(71, 24)
         Me.LblUsername.TabIndex = 2
         Me.LblUsername.Text = "Usuario"
         '
@@ -102,33 +107,36 @@ Partial Class LoginForm
         '
         Me.TxtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUser.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtUser.ForeColor = System.Drawing.Color.White
-        Me.TxtUser.Location = New System.Drawing.Point(30, 271)
+        Me.TxtUser.Location = New System.Drawing.Point(40, 334)
+        Me.TxtUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TxtUser.Name = "TxtUser"
-        Me.TxtUser.Size = New System.Drawing.Size(350, 26)
+        Me.TxtUser.Size = New System.Drawing.Size(466, 32)
         Me.TxtUser.TabIndex = 0
         '
         'TxtPass
         '
         Me.TxtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.TxtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPass.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtPass.ForeColor = System.Drawing.Color.White
-        Me.TxtPass.Location = New System.Drawing.Point(30, 325)
+        Me.TxtPass.Location = New System.Drawing.Point(40, 400)
+        Me.TxtPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TxtPass.Name = "TxtPass"
         Me.TxtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TxtPass.Size = New System.Drawing.Size(350, 26)
+        Me.TxtPass.Size = New System.Drawing.Size(466, 32)
         Me.TxtPass.TabIndex = 1
         '
         'LblPass
         '
         Me.LblPass.AutoSize = True
-        Me.LblPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPass.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblPass.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblPass.Location = New System.Drawing.Point(26, 303)
+        Me.LblPass.Location = New System.Drawing.Point(35, 373)
+        Me.LblPass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LblPass.Name = "LblPass"
-        Me.LblPass.Size = New System.Drawing.Size(78, 20)
+        Me.LblPass.Size = New System.Drawing.Size(88, 24)
         Me.LblPass.TabIndex = 4
         Me.LblPass.Text = "Password"
         '
@@ -137,9 +145,10 @@ Partial Class LoginForm
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.CheckBox1.Location = New System.Drawing.Point(30, 363)
+        Me.CheckBox1.Location = New System.Drawing.Point(40, 447)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(106, 20)
+        Me.CheckBox1.Size = New System.Drawing.Size(126, 24)
         Me.CheckBox1.TabIndex = 7
         Me.CheckBox1.Text = "Recuerdame"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -150,11 +159,12 @@ Partial Class LoginForm
         Me.BtnLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.BtnLog.FlatAppearance.BorderSize = 0
         Me.BtnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLog.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnLog.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BtnLog.Location = New System.Drawing.Point(30, 460)
+        Me.BtnLog.Location = New System.Drawing.Point(40, 566)
+        Me.BtnLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnLog.Name = "BtnLog"
-        Me.BtnLog.Size = New System.Drawing.Size(350, 50)
+        Me.BtnLog.Size = New System.Drawing.Size(467, 62)
         Me.BtnLog.TabIndex = 3
         Me.BtnLog.Text = "Login"
         Me.BtnLog.UseVisualStyleBackColor = False
@@ -165,7 +175,7 @@ Partial Class LoginForm
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(400, 680)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(533, 837)
         Me.ShapeContainer1.TabIndex = 9
         Me.ShapeContainer1.TabStop = False
         '
@@ -182,11 +192,12 @@ Partial Class LoginForm
         '
         Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Font = New System.Drawing.Font("Roboto Condensed", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel1.Location = New System.Drawing.Point(146, 619)
+        Me.LinkLabel1.Location = New System.Drawing.Point(195, 762)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(138, 16)
+        Me.LinkLabel1.Size = New System.Drawing.Size(153, 20)
         Me.LinkLabel1.TabIndex = 4
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Olvidó la contraseña?"
@@ -194,7 +205,8 @@ Partial Class LoginForm
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.SB.My.Resources.Resources.icons8_teacher_124px
-        Me.PictureBox1.Location = New System.Drawing.Point(139, 82)
+        Me.PictureBox1.Location = New System.Drawing.Point(185, 101)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(124, 124)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -205,7 +217,8 @@ Partial Class LoginForm
         '
         Me.BtnPasshidden.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnPasshidden.Image = Global.SB.My.Resources.Resources.icons8_eye_24px
-        Me.BtnPasshidden.Location = New System.Drawing.Point(356, 358)
+        Me.BtnPasshidden.Location = New System.Drawing.Point(475, 441)
+        Me.BtnPasshidden.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BtnPasshidden.Name = "BtnPasshidden"
         Me.BtnPasshidden.Size = New System.Drawing.Size(24, 24)
         Me.BtnPasshidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -214,10 +227,10 @@ Partial Class LoginForm
         '
         'LoginForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(400, 680)
+        Me.ClientSize = New System.Drawing.Size(533, 837)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.BtnLog)
@@ -232,6 +245,7 @@ Partial Class LoginForm
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "LoginForm"
         Me.Opacity = 0.95R
         Me.Text = "LoginForm"

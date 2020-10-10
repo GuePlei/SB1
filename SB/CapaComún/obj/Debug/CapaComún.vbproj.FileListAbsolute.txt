@@ -18,3 +18,13 @@ C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.vbproj.CoreComp
 C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.dll
 C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.xml
 C:\Users\Xayath\Desktop\peter\SB\CapaComún\obj\Debug\CapaComún.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\bin\Debug\CapaComún.dll
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\bin\Debug\CapaComún.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\bin\Debug\CapaComún.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.vbprojAssemblyReference.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.Resources.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.vbproj.GenerateResource.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.vbproj.CoreCompileInputs.cache
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.dll
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.xml
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\CapaComún\obj\Debug\CapaComún.pdb

@@ -27,7 +27,7 @@ Public Class LoginForm
     <DllImport("user32.DLL", EntryPoint:="SendMessage")>
     Private Shared Sub SendMessage(hWnd As IntPtr, wMsg As Integer, wParam As Integer, lParam As Integer)
     End Sub
-    Private Sub paneltitulo_MouseDown(sender As Object, e As MouseEventArgs) Handles PanelTitulo.MouseDown
+    Private Sub Paneltitulo_MouseDown(sender As Object, e As MouseEventArgs) Handles PanelTitulo.MouseDown
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
@@ -35,7 +35,7 @@ Public Class LoginForm
     Private Sub BtnLog_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
         login()
     End Sub
-    Private Sub login()
+    Private Sub Login()
         Dim userModel As New UserModel
         Dim validLogin = userModel.Login(TxtUser.Text, TxtPass.Text)
         If validLogin = True Then
