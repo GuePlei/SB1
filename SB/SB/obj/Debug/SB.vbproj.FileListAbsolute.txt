@@ -91,3 +91,34 @@ C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.exe
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.xml
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.pdb
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Frmeditarperfil.resources
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.exe.config
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.exe
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.pdb
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.xml
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\CapaComún.dll
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Dominio.exe
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Acceso de Datos.exe
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\CapaComún.pdb
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\CapaComún.xml
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Dominio.pdb
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Dominio.xml
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Dominio.exe.config
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Acceso de Datos.pdb
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Acceso de Datos.xml
+C:\Users\Xayath\source\repos\SB\SB\bin\Debug\Acceso de Datos.exe.config
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.vbprojAssemblyReference.cache
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Frmeditarperfil.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.FrmStart.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Boletas.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Form3.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Inicio.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.LoginForm.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Resources.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.Recuperar_Contraseña.resources
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.vbproj.GenerateResource.cache
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.vbproj.CoreCompileInputs.cache
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.vbproj.CopyComplete
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.exe
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.xml
+C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.pdb

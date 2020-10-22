@@ -91,4 +91,24 @@ Public Class Frmeditarperfil
         Panel2.Visible = False
         Reset()
     End Sub
+
+    Private Sub Txtuser_TextChanged(sender As Object, e As EventArgs) Handles Txtuser.TextChanged
+
+    End Sub
+
+    Private Sub Txtname_TextChanged(sender As Object, e As EventArgs) Handles Txtname.TextChanged
+
+    End Sub
+
+    Private Sub Txtlname_TextChanged(sender As Object, e As EventArgs) Handles Txtlname.TextChanged
+
+    End Sub
+
+    Private Sub Lblusered_Click(sender As Object, e As EventArgs) Handles Lblusered.Click
+
+    End Sub
+
+    Private Sub Lblnameed_Click(sender As Object, e As EventArgs) Handles Lblnameed.Click
+
+    End Sub
 End Class

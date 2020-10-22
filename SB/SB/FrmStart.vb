@@ -1,6 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 Imports CapaComún
 Imports Dominio
+
 Public Class FrmStart
     Private Currentchildform As Form
 #Region "Funcionalidades del Formulario"
@@ -152,5 +153,17 @@ Public Class FrmStart
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         OpenChildForm(New Frmeditarperfil)
+    End Sub
+
+    Private Sub Pbuser_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PanelFrms_Paint(sender As Object, e As PaintEventArgs) Handles PanelFrms.Paint
+
+    End Sub
+
+    Private Sub PlnMenu_Paint(sender As Object, e As PaintEventArgs) Handles PlnMenu.Paint
+
     End Sub
 End Class

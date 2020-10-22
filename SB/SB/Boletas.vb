@@ -5,7 +5,7 @@
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -14,45 +14,28 @@
         FrmStart.LblTop.Text = ""
     End Sub
 
-    Private Sub Tipobole_Click(sender As Object, e As EventArgs) Handles Tipobole.Click
-        Subpanel.Visible = True
-    End Sub
-
-    Private Sub Tipo2_Click(sender As Object, e As EventArgs) Handles tipo2.Click
-        Subpanel.Visible = False
-        Tipobole.Text = tipo2.Text
-    End Sub
-
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+    Private Sub Txtemail_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Tipo3_Click(sender As Object, e As EventArgs) Handles tipo3.Click
-        Subpanel.Visible = False
-        Tipobole.Text = tipo3.Text
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+
     End Sub
 
-    Private Sub Tipo1_Click(sender As Object, e As EventArgs) Handles tipo1.Click
-        Subpanel.Visible = False
-        Tipobole.Text = tipo1.Text
+    Private Sub BtnBolFrm2_Click(sender As Object, e As EventArgs) Handles Puntos.Click
+        Panelpuntos.Visible = True
+
     End Sub
 
-    Private Sub Boleta_Click(sender As Object, e As EventArgs) Handles Boleta.Click
-        Subpanel2.Visible = True
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Panelpuntos.Visible = False
     End Sub
 
-    Private Sub Boleta1_Click(sender As Object, e As EventArgs) Handles boleta1.Click
-        Subpanel2.Visible = False
-        Boleta.Text = boleta1.Text
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Panelpuntos.Visible = False
     End Sub
 
-    Private Sub Boleta2_Click(sender As Object, e As EventArgs) Handles boleta2.Click
-        Subpanel2.Visible = False
-        Boleta.Text = boleta2.Text
-    End Sub
-
-    Private Sub Boleta3_Click(sender As Object, e As EventArgs) Handles boleta3.Click
-        Subpanel2.Visible = False
-        Boleta.Text = boleta3.Text
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Panelpuntos.Visible = False
     End Sub
 End Class

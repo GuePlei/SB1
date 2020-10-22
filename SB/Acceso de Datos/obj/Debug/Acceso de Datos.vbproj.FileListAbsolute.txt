@@ -43,3 +43,18 @@ C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\A
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.exe
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.xml
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\Acceso de Datos\obj\Debug\Acceso de Datos.pdb
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\Acceso de Datos.exe.config
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\Acceso de Datos.exe
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\Acceso de Datos.pdb
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\Acceso de Datos.xml
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\CapaComún.dll
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\CapaComún.pdb
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\bin\Debug\CapaComún.xml
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbprojAssemblyReference.cache
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso_de_Datos.Resources.resources
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.GenerateResource.cache
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.CoreCompileInputs.cache
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.vbproj.CopyComplete
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.exe
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.xml
+C:\Users\Xayath\source\repos\SB\Acceso de Datos\obj\Debug\Acceso de Datos.pdb
