@@ -1,13 +1,13 @@
 ﻿Imports CapaComún
 Imports Dominio
-Public Class Frmeditarperfil
+Public Class FrmEditar
 
     Private Sub BtnClose_Click_1(sender As Object, e As EventArgs) Handles BtnClose.Click
         Me.Close()
     End Sub
 
     Private Sub Frmeditarperfil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        loadUserData()
+        LoadUserData()
         ControlEditsPass()
     End Sub
     Private Sub LoadUserData()
@@ -84,31 +84,11 @@ Public Class Frmeditarperfil
             MessageBox.Show("Las contraseñas no coinciden")
 
         End If
-        '  End If
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Panel2.Visible = False
         Reset()
-    End Sub
-
-    Private Sub Txtuser_TextChanged(sender As Object, e As EventArgs) Handles Txtuser.TextChanged
-
-    End Sub
-
-    Private Sub Txtname_TextChanged(sender As Object, e As EventArgs) Handles Txtname.TextChanged
-
-    End Sub
-
-    Private Sub Txtlname_TextChanged(sender As Object, e As EventArgs) Handles Txtlname.TextChanged
-
-    End Sub
-
-    Private Sub Lblusered_Click(sender As Object, e As EventArgs) Handles Lblusered.Click
-
-    End Sub
-
-    Private Sub Lblnameed_Click(sender As Object, e As EventArgs) Handles Lblnameed.Click
-
     End Sub
 End Class

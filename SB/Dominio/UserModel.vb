@@ -10,7 +10,24 @@ Public Class UserModel
     Private lastName
     Private position
     Private email
-
+    Private Correo
+    Private ID
+    Public Property ID1 As Object
+        Get
+            Return ID
+        End Get
+        Set(value As Object)
+            ID = value
+        End Set
+    End Property
+    Public Property Correo1 As Object
+        Get
+            Return Correo
+        End Get
+        Set(value As Object)
+            Correo = value
+        End Set
+    End Property
     Public Property IdUser1 As Object
         Get
             Return idUser
@@ -83,10 +100,15 @@ Public Class UserModel
         Me.Position1 = position
         Me.Email1 = email
     End Sub
+    Public Sub New(ID As Object, Correo As Object)
+        Me.ID1 = ID
+        Me.Correo1 = Correo
+
+    End Sub
+
     Public Sub New()
     End Sub
     Public Function Editarperfil() As String
-
         Try
             userDao.editProfile(idUser, LoginName, Password, firstName, lastName, email)
             Login(LoginName, Password)
@@ -96,14 +118,29 @@ Public Class UserModel
         End Try
 
     End Function
+    Public Function Editarcorreo() As String
+        Try
+            userDao.editarcorreo(Correo)
+            Return "Correo Editado Correctamente"
+        Catch ex As Exception
+            Return "Error"
+        End Try
 
+    End Function
+    Public Function sentemail()
+        Return userDao.Sentemail
+
+    End Function
     Public Function RecoverPassword(requestingUser As String) As String
         Return userDao.RequestUserPassword(requestingUser)
 
     End Function
-
+    Public Function cargaremail()
+        Return userDao.Cargar_email()
+    End Function
     Public Function Login(user As String, Password As String) As Boolean
         Return userDao.Login(user, Password)
+
     End Function
     Public Function AnyMethod(id As Integer) As Boolean
         If ActiveUser.idUser >= 1 Then

@@ -81,23 +81,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frmeditarperfil.Designer.vb">
-      <DependentUpon>Frmeditarperfil.vb</DependentUpon>
+    <Compile Include="FrmEditar.Designer.vb">
+      <DependentUpon>FrmEditar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Frmeditarperfil.vb">
+    <Compile Include="FrmEditar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStart.vb">
+    <Compile Include="FrmInicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStart.Designer.vb">
-      <DependentUpon>FrmStart.vb</DependentUpon>
+    <Compile Include="FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Boletas.Designer.vb">
-      <DependentUpon>Boletas.vb</DependentUpon>
+    <Compile Include="FrmBoletas.Designer.vb">
+      <DependentUpon>FrmBoletas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Boletas.vb">
+    <Compile Include="FrmBoletas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form3.Designer.vb">
@@ -106,16 +106,16 @@
     <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.vb">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <Compile Include="FrmAjustes.Designer.vb">
+      <DependentUpon>FrmAjustes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.vb">
+    <Compile Include="FrmAjustes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.vb">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.vb">
+    <Compile Include="FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -134,31 +134,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Recuperar Contraseña.Designer.vb">
-      <DependentUpon>Recuperar Contraseña.vb</DependentUpon>
+    <Compile Include="FrmRecuperarpass.Designer.vb">
+      <DependentUpon>FrmRecuperarpass.vb</DependentUpon>
     </Compile>
-    <Compile Include="Recuperar Contraseña.vb">
+    <Compile Include="FrmRecuperarpass.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Frmeditarperfil.resx">
-      <DependentUpon>Frmeditarperfil.vb</DependentUpon>
+    <EmbeddedResource Include="FrmEditar.resx">
+      <DependentUpon>FrmEditar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStart.resx">
-      <DependentUpon>FrmStart.vb</DependentUpon>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Boletas.resx">
-      <DependentUpon>Boletas.vb</DependentUpon>
+    <EmbeddedResource Include="FrmBoletas.resx">
+      <DependentUpon>FrmBoletas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
-      <DependentUpon>Inicio.vb</DependentUpon>
+    <EmbeddedResource Include="FrmAjustes.resx">
+      <DependentUpon>FrmAjustes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.vb</DependentUpon>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -166,8 +166,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Recuperar Contraseña.resx">
-      <DependentUpon>Recuperar Contraseña.vb</DependentUpon>
+    <EmbeddedResource Include="FrmRecuperarpass.resx">
+      <DependentUpon>FrmRecuperarpass.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

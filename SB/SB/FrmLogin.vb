@@ -1,7 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 Imports Dominio
 
-Public Class LoginForm
+Public Class FrmLogin
     Dim M As Integer
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
         If MessageBox.Show("¿Estás seguro de querer cerrar la aplicación?", "¡Atención!",
@@ -37,9 +37,10 @@ Public Class LoginForm
     End Sub
     Private Sub Login()
         Dim userModel As New UserModel
+        userModel.cargaremail()
         Dim validLogin = userModel.Login(TxtUser.Text, TxtPass.Text)
         If validLogin = True Then
-            Dim frm As New FrmStart()
+            Dim frm As New FrmInicio()
             frm.Show()
             AddHandler frm.FormClosed, AddressOf Me.Loguot
             Me.Hide()

@@ -77,10 +77,7 @@ C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Dato
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.xml
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Acceso de Datos.exe.config
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbprojAssemblyReference.cache
-C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmStart.resources
-C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Boletas.resources
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Form3.resources
-C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Inicio.resources
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.LoginForm.resources
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Resources.resources
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Recuperar_Contraseña.resources
@@ -90,7 +87,6 @@ C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.Copy
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.exe
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.xml
 C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.pdb
-C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Frmeditarperfil.resources
 C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.exe.config
 C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.exe
 C:\Users\Xayath\source\repos\SB\SB\bin\Debug\SB.pdb
@@ -122,3 +118,7 @@ C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.vbproj.CopyComplete
 C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.exe
 C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.xml
 C:\Users\Xayath\source\repos\SB\SB\obj\Debug\SB.pdb
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmEditar.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmInicio.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmBoletas.resources
+C:\Users\Andrey Guerrero\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmAjustes.resources

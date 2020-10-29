@@ -2,7 +2,7 @@
 Imports CapaComún
 Imports Dominio
 
-Public Class FrmStart
+Public Class FrmInicio
     Private Currentchildform As Form
 #Region "Funcionalidades del Formulario"
     'Arrastrar Form desde el panel
@@ -24,10 +24,10 @@ Public Class FrmStart
         End If
     End Sub
     Private Sub BtnMxi_Click(sender As Object, e As EventArgs) Handles BtnMxi.Click
-        Call winstate()
+        Call Winstate()
     End Sub
     Private Sub PlnHead_DoubleClick(sender As Object, e As EventArgs) Handles PlnHead.DoubleClick
-        Call winstate()
+        Call Winstate()
     End Sub
     Private Sub BtnMini_Click(sender As Object, e As EventArgs) Handles BtnMini.Click
         Me.WindowState = FormWindowState.Minimized
@@ -37,6 +37,7 @@ Public Class FrmStart
         LblName.Text = ActiveUser.firstName + ", " + ActiveUser.lastName
         Lblem.Text = ActiveUser.email
         LblPos.Text = ActiveUser.position
+
     End Sub
     Private Sub Security()
         Dim user As New UserModel()
@@ -46,9 +47,9 @@ Public Class FrmStart
         End If
     End Sub
     Private Sub FrmStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        security()
-        loadUser()
-        administraciondepermisos()
+        Security()
+        LoadUser()
+        Administraciondepermisos()
 
 
     End Sub
@@ -127,32 +128,31 @@ Public Class FrmStart
         childForm.Show()
         'LblTop.Text = childForm.Text
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnBolFrm2.Click
-        OpenChildForm(New Boletas)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnBole.Click
+        OpenChildForm(New FrmBoletas)
     End Sub
     Private Sub BtnHome_Click(sender As Object, e As EventArgs)
-        OpenChildForm(New FrmStart)
+        OpenChildForm(New FrmInicio)
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         OpenChildForm(New Form3)
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        OpenChildForm(New Inicio)
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Btnsettings.Click
+        OpenChildForm(New FrmAjustes)
     End Sub
 #End Region
     Private Sub Administraciondepermisos()
         If ActiveUser.position = Puestos.Manager Then
-            Button3.Enabled = False
+            Btnsettings.Enabled = False
 
         End If
         If ActiveUser.position = Puestos.CEO Then
-            BtnBolFrm2.Enabled = False
-            Button2.Enabled = False
+            Btnsettings.Enabled = False
         End If
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        OpenChildForm(New Frmeditarperfil)
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Btneditar.Click
+        OpenChildForm(New FrmEditar)
     End Sub
 
     Private Sub Pbuser_Click(sender As Object, e As EventArgs)

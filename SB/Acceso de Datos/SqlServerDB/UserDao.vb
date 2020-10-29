@@ -21,6 +21,35 @@ Public Class UserDao
             End Using
         End Using
     End Sub
+    Public Sub editarcorreo(correo)
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+                command.CommandText = "update correo set correo=@correo"
+                command.Parameters.AddWithValue("@correo", correo)
+                command.CommandType = CommandType.Text
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+    End Sub
+#Region "Email"
+    Public Function Sentemail()
+
+        Dim SystemSupport = New SystemSupportMail()
+        SystemSupport.sendMail(
+                        subject:="Nueva Boleta",
+                         body:="Hola Fernando, " & vbNewLine &
+                         "El profesor: " & ActiveUser.firstName + " " + ActiveUser.lastName & vbNewLine &
+                         "Estudiante: " & ActiveUser.Estudiante & vbNewLine &
+                         "Motivo: " & ActiveUser.Motivo & vbNewLine &
+                         "Descripción del Motivo: " & ActiveUser.Desc & vbNewLine &
+                         "Puntos: " & ActiveUser.Puntos & vbNewLine &
+                         "Tipo: " & ActiveUser.Tipo & vbNewLine,
+                         receiverMail:=New List(Of String) From {ActiveUser.Correo})
+        Return MessageBox.Show("¡Boleta enviada!", "¡Atención!",
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    End Function
 
     Public Function RequestUserPassword(ByVal requestingUser As String) As String
         Using connection = GetConnection()
@@ -57,6 +86,7 @@ Public Class UserDao
 
         End Using
     End Function
+#End Region
     Public Function Login(user As String, pass As String) As Boolean
         Using Connection = GetConnection()
             Connection.Open()
@@ -77,6 +107,28 @@ Public Class UserDao
                         ActiveUser.lastName = reader.GetString(4)
                         ActiveUser.position = reader.GetString(5)
                         ActiveUser.email = reader.GetString(6)
+
+                    End While
+                    reader.Dispose()
+                    Return True
+                Else
+                    Return False
+                End If
+            End Using
+        End Using
+    End Function
+    Public Function Cargar_email()
+        Using Connection = GetConnection()
+            Connection.Open()
+            Using Command = New SqlCommand
+                Command.Connection = Connection
+                Command.CommandText = "select * from Correo"
+                Command.CommandType = CommandType.Text
+                Dim reader = Command.ExecuteReader()
+                If reader.HasRows Then
+                    While reader.Read
+                        ActiveUser.ID = reader.GetInt32(0)
+                        ActiveUser.Correo = reader.GetString(1)
                     End While
                     reader.Dispose()
                     Return True
@@ -112,4 +164,5 @@ Public Class UserDao
             'codigo para el CEO
         End If
     End Sub
+
 End Class
