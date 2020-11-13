@@ -5,7 +5,8 @@ Public MustInherit Class ConnectionToSql
         Protected Sub New()
         connectionString = "Server=GUERREROPC\GUERREROPCSQL; DataBase=BoletasDigitales; integrated security = true"
     End Sub
-        Protected Function GetConnection() As SQLConnection
-            Return New SQLConnection(connectionString)
-        End Function
-    End Class
+    Protected Function GetConnection() As SQLConnection
+        Return New SQLConnection(connectionString)
+    End Function
+    'Programador: Andrey Guerrero
+End Class

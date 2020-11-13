@@ -23,7 +23,7 @@ Partial Class Recuperar_Contraseña
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recuperar_Contraseña))
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lblsuerh = New System.Windows.Forms.Label()
         Me.LblResult = New System.Windows.Forms.Label()
         Me.TxtUser = New System.Windows.Forms.TextBox()
         Me.BtnSend = New System.Windows.Forms.Button()
@@ -37,22 +37,22 @@ Partial Class Recuperar_Contraseña
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'Lblsuerh
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label1.Location = New System.Drawing.Point(29, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(282, 19)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Ingrese su usuario o su Correo Electrónico"
+        Me.Lblsuerh.AutoSize = True
+        Me.Lblsuerh.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblsuerh.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblsuerh.Location = New System.Drawing.Point(29, 70)
+        Me.Lblsuerh.Name = "Lblsuerh"
+        Me.Lblsuerh.Size = New System.Drawing.Size(282, 19)
+        Me.Lblsuerh.TabIndex = 0
+        Me.Lblsuerh.Text = "Ingrese su usuario o su Correo Electrónico"
         '
         'LblResult
         '
         Me.LblResult.AutoSize = True
         Me.LblResult.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblResult.Location = New System.Drawing.Point(30, 254)
+        Me.LblResult.Location = New System.Drawing.Point(12, 253)
         Me.LblResult.Name = "LblResult"
         Me.LblResult.Size = New System.Drawing.Size(0, 13)
         Me.LblResult.TabIndex = 1
@@ -61,10 +61,11 @@ Partial Class Recuperar_Contraseña
         '
         Me.TxtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtUser.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtUser.ForeColor = System.Drawing.Color.White
         Me.TxtUser.Location = New System.Drawing.Point(78, 148)
         Me.TxtUser.Name = "TxtUser"
-        Me.TxtUser.Size = New System.Drawing.Size(175, 20)
+        Me.TxtUser.Size = New System.Drawing.Size(175, 22)
         Me.TxtUser.TabIndex = 2
         '
         'BtnSend
@@ -75,7 +76,7 @@ Partial Class Recuperar_Contraseña
         Me.BtnSend.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
         Me.BtnSend.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.BtnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSend.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSend.Font = New System.Drawing.Font("Roboto Condensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnSend.ForeColor = System.Drawing.Color.Gainsboro
         Me.BtnSend.Location = New System.Drawing.Point(103, 220)
         Me.BtnSend.Name = "BtnSend"
@@ -148,7 +149,7 @@ Partial Class Recuperar_Contraseña
         Me.Controls.Add(Me.BtnSend)
         Me.Controls.Add(Me.TxtUser)
         Me.Controls.Add(Me.LblResult)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Lblsuerh)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recuperar_Contraseña"
@@ -162,7 +163,7 @@ Partial Class Recuperar_Contraseña
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lblsuerh As Label
     Friend WithEvents LblResult As Label
     Friend WithEvents TxtUser As TextBox
     Friend WithEvents BtnSend As Button

@@ -8,4 +8,5 @@
         ssl = True
         initalizeSmtpClient()
     End Sub
+    'Programador: Andrey Guerrero
 End Class

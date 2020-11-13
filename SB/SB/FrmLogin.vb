@@ -1,6 +1,5 @@
 ﻿Imports System.Runtime.InteropServices
 Imports Dominio
-
 Public Class FrmLogin
     Dim M As Integer
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
@@ -81,16 +80,9 @@ Public Class FrmLogin
         End If
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Btnrepass.LinkClicked
         Dim Recuperar_Contraseña As New Recuperar_Contraseña()
         Recuperar_Contraseña.ShowDialog()
     End Sub
-
-    Private Sub TxtUser_TextChanged(sender As Object, e As EventArgs) Handles TxtUser.TextChanged
-
-    End Sub
-
-    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
+    'Programador: Andrey Guerrero
 End Class

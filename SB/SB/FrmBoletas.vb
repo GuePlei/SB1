@@ -7,22 +7,11 @@ Public Class FrmBoletas
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Pbclose.Click
         Me.Close()
         FrmInicio.LblTop.Text = ""
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) 
-        Panelpuntos.Visible = False
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) 
-        Panelpuntos.Visible = False
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) 
-        Panelpuntos.Visible = False
-    End Sub
     Private Sub LoadUser()
         Lblprof.Text = ActiveUser.firstName + " " + ActiveUser.lastName
 
@@ -33,47 +22,42 @@ Public Class FrmBoletas
         Btnenviar.Enabled = False
     End Sub
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-
-    End Sub
-
     Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
-        Lblusered.Text = Txtuser.Text
-        Lblpuntos.Text = txtpuntos.Text
-        Lblmotiv.Text = Txtmotiv.Text
-        Lbldesc.Text = Txtdesc.Text
-        Lbltipo.Text = txttipo.Text
-        Btnenviar.Enabled = True
+        If Txtsec.Text = "" Or Txtmotiv.Text = "" Or Txtest.Text = "" Then
+            MsgBox("No puede dejar los campos de texto en blanco", MsgBoxStyle.Exclamation, "Error")
+        Else
+            Lblest.Text = Txtest.Text
+            Lblmotiv.Text = Txtmotiv.Text
+            Lblsec.Text = Txtsec.Text
+            Btnenviar.Enabled = True
+        End If
     End Sub
 
     Private Sub Btnlimp_Click(sender As Object, e As EventArgs) Handles Btnlimp.Click
-        txttipo.Text = ""
-        txtpuntos.Text = ""
-        Txtmotiv.Text = ""
-        Txtdesc.Text = ""
-        Txtuser.Text = ""
-        Lblusered.Text = ""
-        Lblpuntos.Text = ""
-        Lblmotiv.Text = ""
-        Lbldesc.Text = ""
-        Lbltipo.Text = ""
+        limpiar()
         Btnenviar.Enabled = False
     End Sub
 
     Private Sub Btnenviar_Click(sender As Object, e As EventArgs) Handles Btnenviar.Click
+
         Btnenviar.Enabled = False
-        ActiveUser.Estudiante = Lblusered.Text
+        ActiveUser.Estudiante = Lblest.Text
         ActiveUser.Motivo = Lblmotiv.Text
-        ActiveUser.Desc = Lbldesc.Text
-        ActiveUser.Puntos = Lblpuntos.Text
-        ActiveUser.Tipo = Lbltipo.Text
+        ActiveUser.sec = Lblsec.Text
         Dim userModel As New UserModel()
         Dim result = userModel.sentemail()
+        limpiar()
 
 
     End Sub
-
-    Private Sub txttipo_TextChanged(sender As Object, e As EventArgs) Handles txttipo.TextChanged
+    Sub limpiar()
+        Txtmotiv.Text = ""
+        Txtsec.Text = ""
+        Txtest.Text = ""
+        Lblest.Text = ""
+        Lblmotiv.Text = ""
+        Lblsec.Text = ""
 
     End Sub
+    'Programador: Andrey Guerrero
 End Class

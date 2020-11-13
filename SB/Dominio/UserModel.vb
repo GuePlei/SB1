@@ -2,6 +2,7 @@
 Imports CapaComún
 Public Class UserModel
     Dim userDao As New UserDao
+#Region "Editar"
     'Atributos
     Private idUser
     Private LoginName
@@ -10,7 +11,6 @@ Public Class UserModel
     Private lastName
     Private position
     Private email
-    Private Correo
     Private ID
     Public Property ID1 As Object
         Get
@@ -20,14 +20,7 @@ Public Class UserModel
             ID = value
         End Set
     End Property
-    Public Property Correo1 As Object
-        Get
-            Return Correo
-        End Get
-        Set(value As Object)
-            Correo = value
-        End Set
-    End Property
+
     Public Property IdUser1 As Object
         Get
             Return idUser
@@ -102,7 +95,6 @@ Public Class UserModel
     End Sub
     Public Sub New(ID As Object, Correo As Object)
         Me.ID1 = ID
-        Me.Correo1 = Correo
 
     End Sub
 
@@ -116,17 +108,8 @@ Public Class UserModel
         Catch ex As Exception
             Return "Nombre de usuario ya en uso"
         End Try
-
     End Function
-    Public Function Editarcorreo() As String
-        Try
-            userDao.editarcorreo(Correo)
-            Return "Correo Editado Correctamente"
-        Catch ex As Exception
-            Return "Error"
-        End Try
-
-    End Function
+#End Region
     Public Function sentemail()
         Return userDao.Sentemail
 
@@ -162,4 +145,5 @@ Public Class UserModel
             'codigo para el CEO
         End If
     End Sub
+    'Programador: Andrey Guerrero
 End Class

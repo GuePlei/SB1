@@ -2,9 +2,14 @@
 Imports Dominio
 Public Class Recuperar_Contraseña
     Private Sub BtnSend_Click(sender As Object, e As EventArgs) Handles BtnSend.Click
-        Dim userModel As New UserModel()
-        Dim result = userModel.recoverPassword(TxtUser.Text)
-        LblResult.Text = result
+        If TxtUser.Text = "" Then
+            MsgBox("No puede dejar el campo de texto en blanco", MsgBoxStyle.Exclamation, "Error")
+        Else
+            Dim userModel As New UserModel()
+            Dim result = userModel.recoverPassword(TxtUser.Text)
+            LblResult.Text = result
+            TxtUser.Text = ""
+        End If
     End Sub
 
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
@@ -25,4 +30,5 @@ Public Class Recuperar_Contraseña
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
+    'Programador: Andrey Guerrero
 End Class

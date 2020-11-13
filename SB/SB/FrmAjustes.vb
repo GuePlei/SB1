@@ -5,31 +5,51 @@ Public Class FrmAjustes
         Me.Close()
         FrmInicio.LblTop.Text = ""
     End Sub
-    Private Sub Frmeditarperfil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadUserData()
+    Private Sub Btnsave1_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
+        If Txtuser.Text = "" Or Txtnewpass.Text = "" Or Txtname.Text = "" Or Txtlname.Text = "" Or TxtPos.Text = "" Or Txtemail.Text = "" Then
+            MsgBox("No puede dejar los campos de texto en blanco", MsgBoxStyle.Exclamation, "Error")
+        ElseIf Txtnewpass.Text = Txtcomfpass.Text Then
+
+            Dim userModelB As New UserModelB(
+                                               LoginName:=Txtuser.Text,
+                                               Password:=Txtnewpass.Text,
+                                               firstName:=Txtname.Text,
+                                               lastName:=Txtlname.Text,
+                                               position:=TxtPos.Text,
+                                               email:=Txtemail.Text)
+            Dim result = userModelB.addprofile
+            MessageBox.Show(result)
+        Else
+            MessageBox.Show("Las contraseñas no coinciden")
+        End If
 
     End Sub
-    Private Sub reset()
-        LoadUserData()
-    End Sub
-    Private Sub LoadUserData()
+    Private Sub Butndel_Click(sender As Object, e As EventArgs)
+        If Txtuserdel.Text = "" Then
+            MsgBox("No puede dejar ese campo en blanco", MsgBoxStyle.Critical, "Error")
+        Else
+            If MsgBox("Esta acción es irreversible, ¿está seguro de eliminar?", MsgBoxStyle.YesNo, "Atención") = vbYes Then
+                Dim userModelB As New UserModelB(
+                                                 LoginName:=Txtuserdel.Text)
+                Dim result = userModelB.borrar
+                MessageBox.Show(result)
+                Txtuserdel.Text = ""
 
-        Lblemaildef.Text = ActiveUser.Correo
-    End Sub
-    '   Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
-
-    '      Lblemaildef.Text = txtemail.Text
-
-    '  End Sub
-    Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
-        Lblemaildef.Text = txtemail.Text
-        Dim userModel As New UserModel(ID:=ActiveUser.ID,
-                                                Correo:=txtemail.Text)
-
-        Dim result = userModel.Editarcorreo
-        ActiveUser.Correo = txtemail.Text
-        txtemail.Text = ""
+            End If
+        End If
     End Sub
 
-
+    Private Sub Btnlim_Click(sender As Object, e As EventArgs) Handles Btnlim.Click
+        limpiar()
+    End Sub
+    Sub limpiar()
+        Txtuser.Text = ""
+        Txtnewpass.Text = ""
+        Txtname.Text = ""
+        Txtlname.Text = ""
+        Txtuser.Text = ""
+        TxtPos.Text = ""
+        Txtemail.Text = ""
+    End Sub
+    'Programador: Andrey Guerrero
 End Class

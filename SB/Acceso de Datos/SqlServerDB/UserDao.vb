@@ -4,6 +4,7 @@ Imports CapaComún
 
 Public Class UserDao
     Inherits ConnectionToSql
+#Region "SQL"
     Public Sub editProfile(id, user, pass, name, lastName, mail)
         Using connection = GetConnection()
             connection.Open()
@@ -21,31 +22,95 @@ Public Class UserDao
             End Using
         End Using
     End Sub
-    Public Sub editarcorreo(correo)
+    Public Sub addProfile(LoginName, password, firstname, lastName, position, email)
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
                 command.Connection = connection
-                command.CommandText = "update correo set correo=@correo"
-                command.Parameters.AddWithValue("@correo", correo)
+                command.CommandText = "insert into Users values (@LoginName, @Password, @FirstName, @lastName, @position, @email)"
+                command.Parameters.AddWithValue("@LoginName", LoginName)
+                command.Parameters.AddWithValue("@password", password)
+                command.Parameters.AddWithValue("@firstname", firstname)
+                command.Parameters.AddWithValue("@lastName", lastName)
+                command.Parameters.AddWithValue("@position", position)
+                command.Parameters.AddWithValue("@email", email)
                 command.CommandType = CommandType.Text
                 command.ExecuteNonQuery()
             End Using
         End Using
     End Sub
+    Public Sub borrar(LoginName)
+        Using connection = GetConnection()
+            connection.Open()
+            Using command = New SqlCommand()
+                command.Connection = connection
+                command.CommandText = "delete from Users where LoginName=@LoginName"
+                command.Parameters.AddWithValue("@LoginName", LoginName)
+                command.CommandType = CommandType.Text
+                command.ExecuteNonQuery()
+            End Using
+        End Using
+    End Sub
+    Public Function Login(user As String, pass As String) As Boolean
+        Using Connection = GetConnection()
+            Connection.Open()
+            Using Command = New SqlCommand
+                Command.Connection = Connection
+                Command.CommandText = "select * from users where loginName=@user and password=@pass"
+                Command.Parameters.AddWithValue("@user", user)
+                Command.Parameters.AddWithValue("@pass", pass)
+
+                Command.CommandType = CommandType.Text
+                Dim reader = Command.ExecuteReader()
+                If reader.HasRows Then
+                    While reader.Read
+                        ActiveUser.idUser = reader.GetInt32(0)
+                        ActiveUser.LoginName = reader.GetString(1)
+                        ActiveUser.Password = reader.GetString(2)
+                        ActiveUser.firstName = reader.GetString(3)
+                        ActiveUser.lastName = reader.GetString(4)
+                        ActiveUser.position = reader.GetString(5)
+                        ActiveUser.email = reader.GetString(6)
+
+                    End While
+                    reader.Dispose()
+                    Return True
+                Else
+                    Return False
+                End If
+            End Using
+        End Using
+    End Function
+
+    Public Function ExistsUser(id As Integer) As Boolean
+        Using Connection = GetConnection()
+            Connection.Open()
+            Using Command = New SqlCommand
+                Command.Connection = Connection
+                Command.CommandText = "select * from users where UserID=@user"
+                Command.Parameters.AddWithValue("@user", id)
+                Command.CommandType = CommandType.Text
+                Dim reader = Command.ExecuteReader()
+                If reader.HasRows Then
+
+                    Return True
+                Else
+                    Return False
+                End If
+            End Using
+        End Using
+    End Function
+#End Region
 #Region "Email"
     Public Function Sentemail()
 
         Dim SystemSupport = New SystemSupportMail()
         SystemSupport.sendMail(
-                        subject:="Nueva Boleta",
-                         body:="Hola Fernando, " & vbNewLine &
-                         "El profesor: " & ActiveUser.firstName + " " + ActiveUser.lastName & vbNewLine &
-                         "Estudiante: " & ActiveUser.Estudiante & vbNewLine &
-                         "Motivo: " & ActiveUser.Motivo & vbNewLine &
-                         "Descripción del Motivo: " & ActiveUser.Desc & vbNewLine &
-                         "Puntos: " & ActiveUser.Puntos & vbNewLine &
-                         "Tipo: " & ActiveUser.Tipo & vbNewLine,
+                        subject:="Nueva Boleta, del docente: " & ActiveUser.firstName + " " + ActiveUser.lastName,
+                         body:="Estimado Auxiliar Adminitrativo, " & vbNewLine &
+                         "El Estudiante: " & ActiveUser.Estudiante + " " +
+                         "de la sección: " & ActiveUser.sec + " " +
+                         "ha infringido el reglamento de conducta al cometer la siguiente falta: " & ActiveUser.Motivo & vbNewLine,
                          receiverMail:=New List(Of String) From {ActiveUser.Correo})
         Return MessageBox.Show("¡Boleta enviada!", "¡Atención!",
                   MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -77,44 +142,14 @@ Public Class UserDao
                          receiverMail:=New List(Of String) From {userMail})
                     Return "Hola " & userName & vbNewLine & "Has solicitado recuperar tu contraseña." & vbNewLine &
                         "Revisa tu correo electrónico: " & userMail & vbNewLine &
-                        "Le pedimos que cambie su contraseña actual una vez acceda al sistema."
+                        "Le pedimos que cambie su contraseña " & vbNewLine & "actual una vez acceda al sistema."
+
                 Else
                     Return "Esa dirección de correo/usuario" & vbNewLine & "no esta registrada en el sistema."
 
                 End If
             End Using
 
-        End Using
-    End Function
-#End Region
-    Public Function Login(user As String, pass As String) As Boolean
-        Using Connection = GetConnection()
-            Connection.Open()
-            Using Command = New SqlCommand
-                Command.Connection = Connection
-                Command.CommandText = "select * from users where loginName=@user and password=@pass"
-                Command.Parameters.AddWithValue("@user", user)
-                Command.Parameters.AddWithValue("@pass", pass)
-
-                Command.CommandType = CommandType.Text
-                Dim reader = Command.ExecuteReader()
-                If reader.HasRows Then
-                    While reader.Read
-                        ActiveUser.idUser = reader.GetInt32(0)
-                        ActiveUser.LoginName = reader.GetString(1)
-                        ActiveUser.Password = reader.GetString(2)
-                        ActiveUser.firstName = reader.GetString(3)
-                        ActiveUser.lastName = reader.GetString(4)
-                        ActiveUser.position = reader.GetString(5)
-                        ActiveUser.email = reader.GetString(6)
-
-                    End While
-                    reader.Dispose()
-                    Return True
-                Else
-                    Return False
-                End If
-            End Using
         End Using
     End Function
     Public Function Cargar_email()
@@ -138,31 +173,12 @@ Public Class UserDao
             End Using
         End Using
     End Function
-    Public Function ExistsUser(id As Integer) As Boolean
-        Using Connection = GetConnection()
-            Connection.Open()
-            Using Command = New SqlCommand
-                Command.Connection = Connection
-                Command.CommandText = "select * from users where UserID=@user"
-                Command.Parameters.AddWithValue("@user", id)
-                Command.CommandType = CommandType.Text
-                Dim reader = Command.ExecuteReader()
-                If reader.HasRows Then
+#End Region
 
-                    Return True
-                Else
-                    Return False
-                End If
-            End Using
-        End Using
-    End Function
     Public Sub AnyMethod3()
-        If ActiveUser.position = Puestos.Manager Then
+        If ActiveUser.position = Puestos.Docente Then
             'codigo para el manager
         End If
-        If ActiveUser.position = Puestos.CEO Then
-            'codigo para el CEO
-        End If
     End Sub
-
+    'Programador: Andrey Guerrero
 End Class

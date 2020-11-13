@@ -23,14 +23,14 @@ Public Class FrmEditar
         Txtlname.Text = ActiveUser.lastName
         Txtemail.Text = ActiveUser.email
         Txtnewpass.Text = ActiveUser.Password
-        Txtcomfirmpass.Text = ActiveUser.Password
+        Txtcomfpass.Text = ActiveUser.Password
     End Sub
     Private Sub ControlEditsPass()
         LinkEdit.Text = "Editar"
 
         Txtnewpass.Enabled = False
 
-        Txtcomfirmpass.Enabled = False
+        Txtcomfpass.Enabled = False
         Txtactualpass.Text = ""
     End Sub
     Private Sub Reset()
@@ -38,7 +38,7 @@ Public Class FrmEditar
         ControlEditsPass()
     End Sub
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Panel2.Visible = True
+        Plneditarperf.Visible = True
         LoadUserData()
 
     End Sub
@@ -49,20 +49,16 @@ Public Class FrmEditar
             Txtnewpass.Text = ""
             Txtactualpass.Enabled = True
             Txtnewpass.Text = ""
-            Txtcomfirmpass.Enabled = True
-            Txtcomfirmpass.Text = ""
+            Txtcomfpass.Enabled = True
+            Txtcomfpass.Text = ""
         ElseIf LinkEdit.Text = "Cancelar" Then
             LinkEdit.Text = "Editar"
             Reset()
-
-            'Txtnewpass.Text = ActiveUser.Password
-            ' Txtcomfirmpass.Text = ActiveUser.Password
-
         End If
     End Sub
 
     Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
-        If Txtnewpass.Text = Txtcomfirmpass.Text Then
+        If Txtnewpass.Text = Txtcomfpass.Text Then
             If Txtactualpass.Text = ActiveUser.Password Then
 
                 Dim userModel As New UserModel(idUser:=ActiveUser.idUser,
@@ -76,19 +72,22 @@ Public Class FrmEditar
                 Dim result = userModel.Editarperfil()
                 MessageBox.Show(result)
                 Reset()
-                Panel2.Visible = False
+                Plneditarperf.Visible = False
             Else
                 MessageBox.Show("Contraseña actual incorrecta")
+                Reset()
             End If
         Else
             MessageBox.Show("Las contraseñas no coinciden")
+
 
         End If
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Panel2.Visible = False
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btncancel.Click
+        Plneditarperf.Visible = False
         Reset()
     End Sub
+    'Programador: Andrey Guerrero
 End Class

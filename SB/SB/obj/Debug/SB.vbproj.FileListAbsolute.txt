@@ -3,7 +3,6 @@ C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.pdb
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.xml
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbprojAssemblyReference.cache
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Form3.resources
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Resources.resources
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.GenerateResource.cache
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.CoreCompileInputs.cache

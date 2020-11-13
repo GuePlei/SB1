@@ -1,5 +1,5 @@
 ﻿Public Structure Puestos
     Public Const Administrador = "Administrador"
-    Public Const Manager = "Manager"
-    Public Const CEO = "CEO"
+    Public Const Docente = "Docente"
+    'Programador: Andrey Guerrero
 End Structure

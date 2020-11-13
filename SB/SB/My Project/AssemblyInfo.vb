@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("SB")>
+<Assembly: AssemblyTitle("Sistema de Boletas Digitales")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("SB")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyProduct("Sistema de Boletas Digitales")>
+<Assembly: AssemblyCopyright("Andrey Guerrero Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

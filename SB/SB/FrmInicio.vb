@@ -23,12 +23,6 @@ Public Class FrmInicio
             Application.Exit()
         End If
     End Sub
-    Private Sub BtnMxi_Click(sender As Object, e As EventArgs) Handles BtnMxi.Click
-        Call Winstate()
-    End Sub
-    Private Sub PlnHead_DoubleClick(sender As Object, e As EventArgs) Handles PlnHead.DoubleClick
-        Call Winstate()
-    End Sub
     Private Sub BtnMini_Click(sender As Object, e As EventArgs) Handles BtnMini.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -50,19 +44,6 @@ Public Class FrmInicio
         Security()
         LoadUser()
         Administraciondepermisos()
-
-
-    End Sub
-
-    'Función para maximizar y cambiar iconos
-    Private Sub Winstate()
-        If WindowState = FormWindowState.Normal Then
-            WindowState = FormWindowState.Maximized
-            BtnMxi.Image = My.Resources.icons8_restore_window_24px
-        Else
-            WindowState = FormWindowState.Normal
-            BtnMxi.Image = My.Resources.icons8_maximize_window_24px
-        End If
     End Sub
     Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
         BtnClose.Image = My.Resources.icons8_close_window_24px_1
@@ -134,20 +115,15 @@ Public Class FrmInicio
     Private Sub BtnHome_Click(sender As Object, e As EventArgs)
         OpenChildForm(New FrmInicio)
     End Sub
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        OpenChildForm(New Form3)
-    End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Btnsettings.Click
         OpenChildForm(New FrmAjustes)
     End Sub
 #End Region
     Private Sub Administraciondepermisos()
-        If ActiveUser.position = Puestos.Manager Then
+        If ActiveUser.position = Puestos.Docente Then
             Btnsettings.Enabled = False
+            Panel7.Visible = True
 
-        End If
-        If ActiveUser.position = Puestos.CEO Then
-            Btnsettings.Enabled = False
         End If
     End Sub
 
@@ -155,15 +131,5 @@ Public Class FrmInicio
         OpenChildForm(New FrmEditar)
     End Sub
 
-    Private Sub Pbuser_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PanelFrms_Paint(sender As Object, e As PaintEventArgs) Handles PanelFrms.Paint
-
-    End Sub
-
-    Private Sub PlnMenu_Paint(sender As Object, e As PaintEventArgs) Handles PlnMenu.Paint
-
-    End Sub
+    'Programador: Andrey Guerrero
 End Class

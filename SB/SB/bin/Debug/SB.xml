@@ -22,6 +22,21 @@ SB
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:SB.My.Resources.Resources.descarga">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.Escudo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.Escudo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SB.My.Resources.Resources.icons8_close_window_24px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

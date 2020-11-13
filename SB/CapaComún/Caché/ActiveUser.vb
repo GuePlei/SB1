@@ -13,8 +13,7 @@
     Public Correo
     Public Estudiante
     Public Motivo
-    Public Desc
-    Public Puntos
-    Public Tipo
+    Public sec
 #End Region
+    'Programador: Andrey Guerrero
 End Module
