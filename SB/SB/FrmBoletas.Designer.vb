@@ -23,15 +23,16 @@ Partial Class FrmBoletas
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Plnbole = New System.Windows.Forms.Panel()
+        Me.Lblbole = New System.Windows.Forms.Label()
         Me.Txtsec = New System.Windows.Forms.TextBox()
         Me.Lblsect = New System.Windows.Forms.Label()
-        Me.Btnlimp = New System.Windows.Forms.Button()
         Me.Btnsave = New System.Windows.Forms.Button()
         Me.Txtmotiv = New System.Windows.Forms.TextBox()
         Me.Txtest = New System.Windows.Forms.TextBox()
         Me.Lblmotivt = New System.Windows.Forms.Label()
         Me.Lblestt = New System.Windows.Forms.Label()
         Me.Plncomf = New System.Windows.Forms.Panel()
+        Me.Lblcomf = New System.Windows.Forms.Label()
         Me.Pbclose = New System.Windows.Forms.PictureBox()
         Me.Lblsec = New System.Windows.Forms.Label()
         Me.Lbsech = New System.Windows.Forms.Label()
@@ -43,8 +44,6 @@ Partial Class FrmBoletas
         Me.Lblesth = New System.Windows.Forms.Label()
         Me.Lblprofh = New System.Windows.Forms.Label()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
-        Me.Lblbole = New System.Windows.Forms.Label()
-        Me.Lblcomf = New System.Windows.Forms.Label()
         Me.Plnbole.SuspendLayout()
         Me.Plncomf.SuspendLayout()
         CType(Me.Pbclose, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +55,6 @@ Partial Class FrmBoletas
         Me.Plnbole.Controls.Add(Me.Lblbole)
         Me.Plnbole.Controls.Add(Me.Txtsec)
         Me.Plnbole.Controls.Add(Me.Lblsect)
-        Me.Plnbole.Controls.Add(Me.Btnlimp)
         Me.Plnbole.Controls.Add(Me.Btnsave)
         Me.Plnbole.Controls.Add(Me.Txtmotiv)
         Me.Plnbole.Controls.Add(Me.Txtest)
@@ -69,17 +67,30 @@ Partial Class FrmBoletas
         Me.Plnbole.Size = New System.Drawing.Size(341, 503)
         Me.Plnbole.TabIndex = 4
         '
+        'Lblbole
+        '
+        Me.Lblbole.AutoSize = True
+        Me.Lblbole.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblbole.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblbole.Location = New System.Drawing.Point(32, 35)
+        Me.Lblbole.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lblbole.Name = "Lblbole"
+        Me.Lblbole.Size = New System.Drawing.Size(286, 19)
+        Me.Lblbole.TabIndex = 62
+        Me.Lblbole.Text = "Rellenar con datos del estudiante y motivo"
+        '
         'Txtsec
         '
         Me.Txtsec.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtsec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Txtsec.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtsec.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Txtsec.Location = New System.Drawing.Point(50, 147)
+        Me.Txtsec.Location = New System.Drawing.Point(48, 147)
         Me.Txtsec.Margin = New System.Windows.Forms.Padding(2)
+        Me.Txtsec.MaxLength = 5
         Me.Txtsec.Name = "Txtsec"
         Me.Txtsec.Size = New System.Drawing.Size(256, 22)
-        Me.Txtsec.TabIndex = 2
+        Me.Txtsec.TabIndex = 1
         '
         'Lblsect
         '
@@ -93,20 +104,6 @@ Partial Class FrmBoletas
         Me.Lblsect.TabIndex = 61
         Me.Lblsect.Text = "Sección:"
         '
-        'Btnlimp
-        '
-        Me.Btnlimp.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Btnlimp.FlatAppearance.BorderSize = 0
-        Me.Btnlimp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btnlimp.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btnlimp.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btnlimp.Location = New System.Drawing.Point(184, 272)
-        Me.Btnlimp.Name = "Btnlimp"
-        Me.Btnlimp.Size = New System.Drawing.Size(122, 33)
-        Me.Btnlimp.TabIndex = 7
-        Me.Btnlimp.Text = "Limpiar"
-        Me.Btnlimp.UseVisualStyleBackColor = False
-        '
         'Btnsave
         '
         Me.Btnsave.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
@@ -114,10 +111,10 @@ Partial Class FrmBoletas
         Me.Btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btnsave.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btnsave.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btnsave.Location = New System.Drawing.Point(50, 272)
+        Me.Btnsave.Location = New System.Drawing.Point(114, 263)
         Me.Btnsave.Name = "Btnsave"
         Me.Btnsave.Size = New System.Drawing.Size(122, 33)
-        Me.Btnsave.TabIndex = 5
+        Me.Btnsave.TabIndex = 3
         Me.Btnsave.Text = "Confirmar"
         Me.Btnsave.UseVisualStyleBackColor = False
         '
@@ -131,7 +128,7 @@ Partial Class FrmBoletas
         Me.Txtmotiv.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtmotiv.Name = "Txtmotiv"
         Me.Txtmotiv.Size = New System.Drawing.Size(256, 22)
-        Me.Txtmotiv.TabIndex = 1
+        Me.Txtmotiv.TabIndex = 2
         '
         'Txtest
         '
@@ -190,6 +187,18 @@ Partial Class FrmBoletas
         Me.Plncomf.Size = New System.Drawing.Size(423, 503)
         Me.Plncomf.TabIndex = 3
         '
+        'Lblcomf
+        '
+        Me.Lblcomf.AutoSize = True
+        Me.Lblcomf.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblcomf.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblcomf.Location = New System.Drawing.Point(158, 35)
+        Me.Lblcomf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Lblcomf.Name = "Lblcomf"
+        Me.Lblcomf.Size = New System.Drawing.Size(109, 19)
+        Me.Lblcomf.TabIndex = 62
+        Me.Lblcomf.Text = "Confirmaciones"
+        '
         'Pbclose
         '
         Me.Pbclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -235,7 +244,7 @@ Partial Class FrmBoletas
         Me.Btnenviar.Location = New System.Drawing.Point(145, 353)
         Me.Btnenviar.Name = "Btnenviar"
         Me.Btnenviar.Size = New System.Drawing.Size(122, 33)
-        Me.Btnenviar.TabIndex = 6
+        Me.Btnenviar.TabIndex = 4
         Me.Btnenviar.Text = "Enviar"
         Me.Btnenviar.UseVisualStyleBackColor = False
         '
@@ -244,7 +253,7 @@ Partial Class FrmBoletas
         Me.Lblprof.AutoSize = True
         Me.Lblprof.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblprof.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblprof.Location = New System.Drawing.Point(67, 207)
+        Me.Lblprof.Location = New System.Drawing.Point(68, 207)
         Me.Lblprof.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblprof.Name = "Lblprof"
         Me.Lblprof.Size = New System.Drawing.Size(0, 15)
@@ -319,30 +328,6 @@ Partial Class FrmBoletas
         Me.BtnClose.TabIndex = 1
         Me.BtnClose.TabStop = False
         '
-        'Lblbole
-        '
-        Me.Lblbole.AutoSize = True
-        Me.Lblbole.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblbole.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblbole.Location = New System.Drawing.Point(32, 35)
-        Me.Lblbole.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Lblbole.Name = "Lblbole"
-        Me.Lblbole.Size = New System.Drawing.Size(286, 19)
-        Me.Lblbole.TabIndex = 62
-        Me.Lblbole.Text = "Rellenar con datos del estudiante y motivo"
-        '
-        'Lblcomf
-        '
-        Me.Lblcomf.AutoSize = True
-        Me.Lblcomf.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblcomf.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblcomf.Location = New System.Drawing.Point(158, 35)
-        Me.Lblcomf.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Lblcomf.Name = "Lblcomf"
-        Me.Lblcomf.Size = New System.Drawing.Size(109, 19)
-        Me.Lblcomf.TabIndex = 62
-        Me.Lblcomf.Text = "Confirmaciones"
-        '
         'FrmBoletas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -381,7 +366,6 @@ Partial Class FrmBoletas
     Friend WithEvents Lblprof As Label
     Friend WithEvents Btnsave As Button
     Friend WithEvents Btnenviar As Button
-    Friend WithEvents Btnlimp As Button
     Friend WithEvents Txtsec As TextBox
     Friend WithEvents Lblsect As Label
     Friend WithEvents Lblsec As Label

@@ -82,16 +82,14 @@ Public Class UserModelB
         Catch ex As Exception
             Return "Nombre de usuario ya en uso"
         End Try
-
     End Function
     Public Function borrar() As String
         Try
             userDao.borrar(LoginName)
             Return "Usuario borrado correctamente"
         Catch ex As Exception
-            Return "Nombre de usuario no existente"
+            Return Nothing
         End Try
-
     End Function
     'Programador: Andrey Guerrero
 End Class

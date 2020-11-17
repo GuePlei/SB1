@@ -1,14 +1,7 @@
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe.config
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.exe
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.pdb
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\bin\Debug\SB.xml
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbprojAssemblyReference.cache
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.Resources.resources
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.GenerateResource.cache
 C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.CoreCompileInputs.cache
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.exe
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.xml
-C:\Users\guerr\source\repos\GuePlei\SB1\SB\SB\obj\Debug\SB.pdb
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.vbproj.CopyComplete
@@ -122,3 +115,11 @@ C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmInicio.resources
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmBoletas.resources
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmAjustes.resources
 C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmLogin.resources
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Sistema de Boletas Digitales.exe.config
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Sistema de Boletas Digitales.exe
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Sistema de Boletas Digitales.pdb
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\bin\Debug\Sistema de Boletas Digitales.xml
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Sistema de Boletas Digitales.exe
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Sistema de Boletas Digitales.xml
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\Sistema de Boletas Digitales.pdb
+C:\Users\guerr\Source\Repos\GuePlei\SB1\SB\SB\obj\Debug\SB.FrmListUser.resources

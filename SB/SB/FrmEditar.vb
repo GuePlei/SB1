@@ -89,5 +89,11 @@ Public Class FrmEditar
         Plneditarperf.Visible = False
         Reset()
     End Sub
+    Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
+        BtnClose.Image = My.Resources.icons8_close_window_24px_1
+    End Sub
+    Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
+        BtnClose.Image = My.Resources.icons8_close_window_24px
+    End Sub
     'Programador: Andrey Guerrero
 End Class

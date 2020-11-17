@@ -25,10 +25,10 @@ Partial Class FrmInicio
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmInicio))
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PlnHead = New System.Windows.Forms.Panel()
-        Me.Lblh = New System.Windows.Forms.Label()
         Me.LblTop = New System.Windows.Forms.Label()
         Me.BtnMini = New System.Windows.Forms.PictureBox()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
+        Me.Lblh = New System.Windows.Forms.Label()
         Me.PlnMenu = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -46,7 +46,6 @@ Partial Class FrmInicio
         Me.BtnBole = New System.Windows.Forms.Button()
         Me.PanelFrms = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelContenedor.SuspendLayout()
         Me.PlnHead.SuspendLayout()
         CType(Me.BtnMini, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,26 +73,15 @@ Partial Class FrmInicio
         'PlnHead
         '
         Me.PlnHead.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.PlnHead.Controls.Add(Me.Lblh)
         Me.PlnHead.Controls.Add(Me.LblTop)
         Me.PlnHead.Controls.Add(Me.BtnMini)
         Me.PlnHead.Controls.Add(Me.BtnClose)
+        Me.PlnHead.Controls.Add(Me.Lblh)
         Me.PlnHead.Dock = System.Windows.Forms.DockStyle.Top
         Me.PlnHead.Location = New System.Drawing.Point(188, 0)
         Me.PlnHead.Name = "PlnHead"
         Me.PlnHead.Size = New System.Drawing.Size(767, 40)
         Me.PlnHead.TabIndex = 1
-        '
-        'Lblh
-        '
-        Me.Lblh.AutoSize = True
-        Me.Lblh.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblh.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblh.Location = New System.Drawing.Point(13, 9)
-        Me.Lblh.Name = "Lblh"
-        Me.Lblh.Size = New System.Drawing.Size(195, 19)
-        Me.Lblh.TabIndex = 3
-        Me.Lblh.Text = "Sistema de Boletas Digitales"
         '
         'LblTop
         '
@@ -128,6 +116,17 @@ Partial Class FrmInicio
         Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.BtnClose.TabIndex = 0
         Me.BtnClose.TabStop = False
+        '
+        'Lblh
+        '
+        Me.Lblh.AutoSize = True
+        Me.Lblh.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblh.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Lblh.Location = New System.Drawing.Point(13, 9)
+        Me.Lblh.Name = "Lblh"
+        Me.Lblh.Size = New System.Drawing.Size(195, 19)
+        Me.Lblh.TabIndex = 3
+        Me.Lblh.Text = "Sistema de Boletas Digitales"
         '
         'PlnMenu
         '
@@ -175,7 +174,7 @@ Partial Class FrmInicio
         Me.Btneditar.Location = New System.Drawing.Point(3, 418)
         Me.Btneditar.Name = "Btneditar"
         Me.Btneditar.Size = New System.Drawing.Size(182, 32)
-        Me.Btneditar.TabIndex = 8
+        Me.Btneditar.TabIndex = 1
         Me.Btneditar.Text = "Editar Perfil"
         Me.Btneditar.UseVisualStyleBackColor = True
         '
@@ -308,7 +307,6 @@ Partial Class FrmInicio
         'PanelFrms
         '
         Me.PanelFrms.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.PanelFrms.Controls.Add(Me.Label1)
         Me.PanelFrms.Controls.Add(Me.PictureBox1)
         Me.PanelFrms.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFrms.Location = New System.Drawing.Point(0, 0)
@@ -325,17 +323,6 @@ Partial Class FrmInicio
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Roboto Condensed", 6.0!)
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(186, 536)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 10)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Desarrollado por Andrey Guerrero"
         '
         'FrmInicio
         '
@@ -390,5 +377,4 @@ Partial Class FrmInicio
     Friend WithEvents Panel7 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Lblh As Label
-    Friend WithEvents Label1 As Label
 End Class

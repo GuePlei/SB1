@@ -96,6 +96,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoletasDigitalesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoletasDigitalesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditar.Designer.vb">
       <DependentUpon>FrmEditar.vb</DependentUpon>
     </Compile>
@@ -119,6 +124,12 @@
       <DependentUpon>FrmAjustes.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmAjustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListUser.Designer.vb">
+      <DependentUpon>FrmListUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.vb">
@@ -163,6 +174,9 @@
     <EmbeddedResource Include="FrmAjustes.resx">
       <DependentUpon>FrmAjustes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmListUser.resx">
+      <DependentUpon>FrmListUser.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +191,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BoletasDigitalesDataSet.xsc">
+      <DependentUpon>BoletasDigitalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BoletasDigitalesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoletasDigitalesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoletasDigitalesDataSet.xss">
+      <DependentUpon>BoletasDigitalesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -226,6 +251,7 @@
     <None Include="Resources\descarga.jpg" />
     <None Include="Resources\Escudo.png" />
     <None Include="Resources\Escudo1.png" />
+    <None Include="Resources\editprofile.png" />
     <Content Include="Resources\icons8_agreement_3.ico" />
     <None Include="Resources\icons8_male_user_256px1.png" />
     <None Include="Resources\icons8_male_user_256px.png" />

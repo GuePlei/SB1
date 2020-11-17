@@ -59,7 +59,6 @@ Public Class UserDao
                 Command.CommandText = "select * from users where loginName=@user and password=@pass"
                 Command.Parameters.AddWithValue("@user", user)
                 Command.Parameters.AddWithValue("@pass", pass)
-
                 Command.CommandType = CommandType.Text
                 Dim reader = Command.ExecuteReader()
                 If reader.HasRows Then
@@ -71,7 +70,6 @@ Public Class UserDao
                         ActiveUser.lastName = reader.GetString(4)
                         ActiveUser.position = reader.GetString(5)
                         ActiveUser.email = reader.GetString(6)
-
                     End While
                     reader.Dispose()
                     Return True
@@ -81,7 +79,27 @@ Public Class UserDao
             End Using
         End Using
     End Function
-
+    Public Function delnames(delname As String) As Boolean
+        Using Connection = GetConnection()
+            Connection.Open()
+            Using Command = New SqlCommand
+                Command.Connection = Connection
+                Command.CommandText = "select * from Users where LoginName=@delname"
+                Command.Parameters.AddWithValue("@delname", delname)
+                Command.CommandType = CommandType.Text
+                Dim reader = Command.ExecuteReader()
+                If reader.HasRows Then
+                    While reader.Read
+                        ActiveUser.Delname = reader.GetString(1)
+                    End While
+                    reader.Dispose()
+                    Return True
+                Else
+                    Return False
+                End If
+            End Using
+        End Using
+    End Function
     Public Function ExistsUser(id As Integer) As Boolean
         Using Connection = GetConnection()
             Connection.Open()
@@ -92,7 +110,6 @@ Public Class UserDao
                 Command.CommandType = CommandType.Text
                 Dim reader = Command.ExecuteReader()
                 If reader.HasRows Then
-
                     Return True
                 Else
                     Return False

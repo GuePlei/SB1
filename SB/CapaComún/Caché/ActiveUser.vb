@@ -1,5 +1,6 @@
 ﻿Public Module ActiveUser
 #Region "Datos Usuario"
+    Public Delname
     Public idUser
     Public LoginName
     Public Password

@@ -52,12 +52,10 @@ Public Class FrmLogin
 
     Private Sub TxtPass_KeyDown(sender As Object, e As KeyEventArgs) Handles TxtPass.KeyDown
         If e.KeyCode = Keys.Enter Then
-            login()
-
+            Login()
         End If
     End Sub
     Private Sub Loguot(sender As Object, e As FormClosedEventArgs)
-
         TxtUser.Clear()
         TxtPass.Clear()
 

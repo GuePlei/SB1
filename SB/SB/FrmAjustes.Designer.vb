@@ -27,7 +27,6 @@ Partial Class FrmAjustes
         Me.Txtnewpass = New System.Windows.Forms.TextBox()
         Me.Lblnewpass = New System.Windows.Forms.Label()
         Me.Btnsave = New System.Windows.Forms.Button()
-        Me.TxtPos = New System.Windows.Forms.TextBox()
         Me.Txtemail = New System.Windows.Forms.TextBox()
         Me.Txtlname = New System.Windows.Forms.TextBox()
         Me.Txtname = New System.Windows.Forms.TextBox()
@@ -37,16 +36,17 @@ Partial Class FrmAjustes
         Me.Lbluser = New System.Windows.Forms.Label()
         Me.Lbllname = New System.Windows.Forms.Label()
         Me.Lblemail = New System.Windows.Forms.Label()
-        Me.BtnClose = New System.Windows.Forms.PictureBox()
-        Me.Btnlim = New System.Windows.Forms.Button()
         Me.Lbladdu = New System.Windows.Forms.Label()
         Me.Plndelu = New System.Windows.Forms.Panel()
         Me.Lbldeluh = New System.Windows.Forms.Label()
         Me.Btndel = New System.Windows.Forms.Button()
         Me.Txtuserdel = New System.Windows.Forms.TextBox()
         Me.Lbldelu = New System.Windows.Forms.Label()
-        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnClose = New System.Windows.Forms.PictureBox()
+        Me.CBox = New System.Windows.Forms.ComboBox()
         Me.Plndelu.SuspendLayout()
+        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Txtcomfpass
@@ -60,7 +60,7 @@ Partial Class FrmAjustes
         Me.Txtcomfpass.Name = "Txtcomfpass"
         Me.Txtcomfpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Txtcomfpass.Size = New System.Drawing.Size(256, 21)
-        Me.Txtcomfpass.TabIndex = 49
+        Me.Txtcomfpass.TabIndex = 6
         '
         'Lblcomfpass
         '
@@ -79,14 +79,14 @@ Partial Class FrmAjustes
         '
         Me.Txtnewpass.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtnewpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtnewpass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtnewpass.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtnewpass.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtnewpass.Location = New System.Drawing.Point(49, 348)
         Me.Txtnewpass.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtnewpass.Name = "Txtnewpass"
         Me.Txtnewpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Txtnewpass.Size = New System.Drawing.Size(256, 21)
-        Me.Txtnewpass.TabIndex = 47
+        Me.Txtnewpass.Size = New System.Drawing.Size(256, 22)
+        Me.Txtnewpass.TabIndex = 5
         '
         'Lblnewpass
         '
@@ -108,72 +108,60 @@ Partial Class FrmAjustes
         Me.Btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btnsave.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btnsave.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btnsave.Location = New System.Drawing.Point(49, 448)
+        Me.Btnsave.Location = New System.Drawing.Point(127, 451)
         Me.Btnsave.Name = "Btnsave"
         Me.Btnsave.Size = New System.Drawing.Size(104, 31)
-        Me.Btnsave.TabIndex = 45
+        Me.Btnsave.TabIndex = 7
         Me.Btnsave.Text = "Guardar"
         Me.Btnsave.UseVisualStyleBackColor = False
-        '
-        'TxtPos
-        '
-        Me.TxtPos.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.TxtPos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtPos.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPos.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TxtPos.Location = New System.Drawing.Point(49, 296)
-        Me.TxtPos.Margin = New System.Windows.Forms.Padding(2)
-        Me.TxtPos.Name = "TxtPos"
-        Me.TxtPos.Size = New System.Drawing.Size(256, 21)
-        Me.TxtPos.TabIndex = 44
         '
         'Txtemail
         '
         Me.Txtemail.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtemail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtemail.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtemail.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtemail.Location = New System.Drawing.Point(49, 243)
         Me.Txtemail.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtemail.Name = "Txtemail"
-        Me.Txtemail.Size = New System.Drawing.Size(256, 21)
-        Me.Txtemail.TabIndex = 43
+        Me.Txtemail.Size = New System.Drawing.Size(256, 22)
+        Me.Txtemail.TabIndex = 3
         '
         'Txtlname
         '
         Me.Txtlname.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtlname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtlname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtlname.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtlname.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtlname.Location = New System.Drawing.Point(49, 190)
         Me.Txtlname.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtlname.Name = "Txtlname"
-        Me.Txtlname.Size = New System.Drawing.Size(256, 21)
-        Me.Txtlname.TabIndex = 42
+        Me.Txtlname.Size = New System.Drawing.Size(256, 22)
+        Me.Txtlname.TabIndex = 2
         '
         'Txtname
         '
         Me.Txtname.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtname.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtname.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtname.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtname.Location = New System.Drawing.Point(49, 138)
         Me.Txtname.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtname.Name = "Txtname"
-        Me.Txtname.Size = New System.Drawing.Size(256, 21)
-        Me.Txtname.TabIndex = 41
+        Me.Txtname.Size = New System.Drawing.Size(256, 22)
+        Me.Txtname.TabIndex = 1
         '
         'Txtuser
         '
         Me.Txtuser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtuser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtuser.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtuser.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtuser.Location = New System.Drawing.Point(49, 93)
         Me.Txtuser.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtuser.Name = "Txtuser"
-        Me.Txtuser.Size = New System.Drawing.Size(256, 21)
-        Me.Txtuser.TabIndex = 40
+        Me.Txtuser.Size = New System.Drawing.Size(256, 22)
+        Me.Txtuser.TabIndex = 0
         '
         'LblPos
         '
@@ -236,31 +224,6 @@ Partial Class FrmAjustes
         Me.Lblemail.TabIndex = 35
         Me.Lblemail.Text = "Email:"
         '
-        'BtnClose
-        '
-        Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
-        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
-        Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(24, 24)
-        Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.BtnClose.TabIndex = 3
-        Me.BtnClose.TabStop = False
-        '
-        'Btnlim
-        '
-        Me.Btnlim.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Btnlim.FlatAppearance.BorderSize = 0
-        Me.Btnlim.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Btnlim.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btnlim.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btnlim.Location = New System.Drawing.Point(201, 448)
-        Me.Btnlim.Name = "Btnlim"
-        Me.Btnlim.Size = New System.Drawing.Size(104, 31)
-        Me.Btnlim.TabIndex = 72
-        Me.Btnlim.Text = "Limpiar"
-        Me.Btnlim.UseVisualStyleBackColor = False
-        '
         'Lbladdu
         '
         Me.Lbladdu.AutoSize = True
@@ -305,10 +268,10 @@ Partial Class FrmAjustes
         Me.Btndel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btndel.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btndel.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btndel.Location = New System.Drawing.Point(117, 153)
+        Me.Btndel.Location = New System.Drawing.Point(110, 138)
         Me.Btndel.Name = "Btndel"
         Me.Btndel.Size = New System.Drawing.Size(104, 31)
-        Me.Btndel.TabIndex = 77
+        Me.Btndel.TabIndex = 10
         Me.Btndel.Text = "Borrar"
         Me.Btndel.UseVisualStyleBackColor = False
         '
@@ -316,13 +279,13 @@ Partial Class FrmAjustes
         '
         Me.Txtuserdel.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtuserdel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txtuserdel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtuserdel.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtuserdel.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtuserdel.Location = New System.Drawing.Point(43, 93)
         Me.Txtuserdel.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtuserdel.Name = "Txtuserdel"
-        Me.Txtuserdel.Size = New System.Drawing.Size(256, 21)
-        Me.Txtuserdel.TabIndex = 76
+        Me.Txtuserdel.Size = New System.Drawing.Size(256, 22)
+        Me.Txtuserdel.TabIndex = 9
         '
         'Lbldelu
         '
@@ -336,21 +299,59 @@ Partial Class FrmAjustes
         Me.Lbldelu.TabIndex = 75
         Me.Lbldelu.Text = "Nombre de Usuario a borrar:"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button1.Location = New System.Drawing.Point(431, 475)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 31)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Usuarios"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BtnClose
+        '
+        Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
+        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(24, 24)
+        Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BtnClose.TabIndex = 3
+        Me.BtnClose.TabStop = False
+        '
+        'CBox
+        '
+        Me.CBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.CBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CBox.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBox.ForeColor = System.Drawing.Color.Gainsboro
+        Me.CBox.FormattingEnabled = True
+        Me.CBox.Items.AddRange(New Object() {"Docente", "Administrador"})
+        Me.CBox.Location = New System.Drawing.Point(49, 296)
+        Me.CBox.Name = "CBox"
+        Me.CBox.Size = New System.Drawing.Size(256, 22)
+        Me.CBox.TabIndex = 4
+        '
         'FrmAjustes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(767, 509)
+        Me.Controls.Add(Me.CBox)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Plndelu)
         Me.Controls.Add(Me.Lbladdu)
-        Me.Controls.Add(Me.Btnlim)
         Me.Controls.Add(Me.Txtcomfpass)
         Me.Controls.Add(Me.Lblcomfpass)
         Me.Controls.Add(Me.Txtnewpass)
         Me.Controls.Add(Me.Lblnewpass)
         Me.Controls.Add(Me.Btnsave)
-        Me.Controls.Add(Me.TxtPos)
         Me.Controls.Add(Me.Txtemail)
         Me.Controls.Add(Me.Txtlname)
         Me.Controls.Add(Me.Txtname)
@@ -364,9 +365,9 @@ Partial Class FrmAjustes
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmAjustes"
         Me.Text = "Inicio"
-        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Plndelu.ResumeLayout(False)
         Me.Plndelu.PerformLayout()
+        CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -377,7 +378,6 @@ Partial Class FrmAjustes
     Friend WithEvents Txtnewpass As TextBox
     Friend WithEvents Lblnewpass As Label
     Friend WithEvents Btnsave As Button
-    Friend WithEvents TxtPos As TextBox
     Friend WithEvents Txtemail As TextBox
     Friend WithEvents Txtlname As TextBox
     Friend WithEvents Txtname As TextBox
@@ -387,11 +387,12 @@ Partial Class FrmAjustes
     Friend WithEvents Lbluser As Label
     Friend WithEvents Lbllname As Label
     Friend WithEvents Lblemail As Label
-    Friend WithEvents Btnlim As Button
     Friend WithEvents Lbladdu As Label
     Friend WithEvents Plndelu As Panel
     Friend WithEvents Lbldeluh As Label
     Friend WithEvents Btndel As Button
     Friend WithEvents Txtuserdel As TextBox
     Friend WithEvents Lbldelu As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents CBox As ComboBox
 End Class

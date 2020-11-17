@@ -1,7 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
 Imports CapaComún
 Imports Dominio
-
 Public Class FrmInicio
     Private Currentchildform As Form
 #Region "Funcionalidades del Formulario"
@@ -31,7 +30,6 @@ Public Class FrmInicio
         LblName.Text = ActiveUser.firstName + ", " + ActiveUser.lastName
         Lblem.Text = ActiveUser.email
         LblPos.Text = ActiveUser.position
-
     End Sub
     Private Sub Security()
         Dim user As New UserModel()
@@ -55,42 +53,7 @@ Public Class FrmInicio
         If MessageBox.Show("¿Estás seguro de querer cerrar sesión?", "¡Atención!",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Me.Close()
-
         End If
-
-    End Sub
-
-    'RESIZE DEL FORMULARIO- CAMBIAR TAMAÑO'
-    Dim cGrip As Integer = 10
-    Protected Overrides Sub WndProc(ByRef m As Message)
-        If (m.Msg = 132) Then
-            Dim pos As Point = New Point((m.LParam.ToInt32 And 65535), (m.LParam.ToInt32 + 16))
-            pos = Me.PointToClient(pos)
-            If ((pos.X _
-                    >= (Me.ClientSize.Width - cGrip)) _
-                    AndAlso (pos.Y _
-                    >= (Me.ClientSize.Height - cGrip))) Then
-                m.Result = CType(17, IntPtr)
-                Return
-            End If
-        End If
-        MyBase.WndProc(m)
-    End Sub
-    '----------------DIBUJAR RECTANGULO / EXCLUIR ESQUINA PANEL' 
-    Dim sizeGripRectangle As Rectangle
-    Dim tolerance As Integer = 15
-    Protected Overrides Sub OnSizeChanged(ByVal e As EventArgs)
-        MyBase.OnSizeChanged(e)
-        Dim region = New Region(New Rectangle(0, 0, Me.ClientRectangle.Width, Me.ClientRectangle.Height))
-        sizeGripRectangle = New Rectangle((Me.ClientRectangle.Width - tolerance), (Me.ClientRectangle.Height - tolerance), tolerance, tolerance)
-        region.Exclude(sizeGripRectangle)
-        Me.PanelContenedor.Region = region
-        Me.Invalidate()
-    End Sub
-    '----------------COLOR Y GRIP DE RECTANGULO INFERIOR'
-    Protected Overrides Sub OnPaint(ByVal e As PaintEventArgs)
-        Dim blueBrush As SolidBrush = New SolidBrush(Color.FromArgb(34, 33, 74))
-        e.Graphics.FillRectangle(blueBrush, sizeGripRectangle)
     End Sub
 #End Region
 #Region "Botones para el contenedor del formulario"
@@ -123,12 +86,22 @@ Public Class FrmInicio
         If ActiveUser.position = Puestos.Docente Then
             Btnsettings.Enabled = False
             Panel7.Visible = True
-
         End If
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Btneditar.Click
         OpenChildForm(New FrmEditar)
+    End Sub
+
+
+    Private Sub Lblh_MouseMove(sender As Object, e As MouseEventArgs) Handles Lblh.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    Private Sub PbLogo_MouseMove(sender As Object, e As MouseEventArgs) Handles PbLogo.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
     'Programador: Andrey Guerrero

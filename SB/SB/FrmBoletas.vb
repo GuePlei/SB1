@@ -4,7 +4,6 @@ Public Class FrmBoletas
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
         FrmInicio.LblTop.Text = ""
         Me.Close()
-
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles Pbclose.Click
@@ -14,14 +13,12 @@ Public Class FrmBoletas
 
     Private Sub LoadUser()
         Lblprof.Text = ActiveUser.firstName + " " + ActiveUser.lastName
-
     End Sub
 
     Private Sub Boletas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadUser()
         Btnenviar.Enabled = False
     End Sub
-
     Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
         If Txtsec.Text = "" Or Txtmotiv.Text = "" Or Txtest.Text = "" Then
             MsgBox("No puede dejar los campos de texto en blanco", MsgBoxStyle.Exclamation, "Error")
@@ -33,13 +30,11 @@ Public Class FrmBoletas
         End If
     End Sub
 
-    Private Sub Btnlimp_Click(sender As Object, e As EventArgs) Handles Btnlimp.Click
+    Private Sub Btnlimp_Click(sender As Object, e As EventArgs)
         limpiar()
         Btnenviar.Enabled = False
     End Sub
-
     Private Sub Btnenviar_Click(sender As Object, e As EventArgs) Handles Btnenviar.Click
-
         Btnenviar.Enabled = False
         ActiveUser.Estudiante = Lblest.Text
         ActiveUser.Motivo = Lblmotiv.Text
@@ -47,8 +42,6 @@ Public Class FrmBoletas
         Dim userModel As New UserModel()
         Dim result = userModel.sentemail()
         limpiar()
-
-
     End Sub
     Sub limpiar()
         Txtmotiv.Text = ""
@@ -57,7 +50,12 @@ Public Class FrmBoletas
         Lblest.Text = ""
         Lblmotiv.Text = ""
         Lblsec.Text = ""
-
+    End Sub
+    Private Sub Pbclose_MouseLeave(sender As Object, e As EventArgs) Handles Pbclose.MouseLeave
+        Pbclose.Image = My.Resources.icons8_close_window_24px
+    End Sub
+    Private Sub Pbclose_MouseEnter(sender As Object, e As EventArgs) Handles Pbclose.MouseEnter
+        Pbclose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
     'Programador: Andrey Guerrero
 End Class
