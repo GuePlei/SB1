@@ -104,5 +104,5 @@ Public Class FrmInicio
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    'Programador: Andrey Guerrero
+
 End Class

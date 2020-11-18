@@ -95,5 +95,5 @@ Public Class FrmEditar
     Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
-    'Programador: Andrey Guerrero
+
 End Class

@@ -91,5 +91,5 @@ Public Class UserModelB
             Return Nothing
         End Try
     End Function
-    'Programador: Andrey Guerrero
+
 End Class

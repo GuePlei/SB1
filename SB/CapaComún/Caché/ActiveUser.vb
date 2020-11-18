@@ -16,5 +16,5 @@
     Public Motivo
     Public sec
 #End Region
-    'Programador: Andrey Guerrero
+
 End Module

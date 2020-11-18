@@ -82,5 +82,5 @@ Public Class FrmLogin
         Dim Recuperar_Contraseña As New Recuperar_Contraseña()
         Recuperar_Contraseña.ShowDialog()
     End Sub
-    'Programador: Andrey Guerrero
+
 End Class

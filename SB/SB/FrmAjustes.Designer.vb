@@ -44,7 +44,7 @@ Partial Class FrmAjustes
         Me.Lbldelu = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
-        Me.CBox = New System.Windows.Forms.ComboBox()
+        Me.CBoxPos = New System.Windows.Forms.ComboBox()
         Me.Plndelu.SuspendLayout()
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -324,18 +324,18 @@ Partial Class FrmAjustes
         Me.BtnClose.TabIndex = 3
         Me.BtnClose.TabStop = False
         '
-        'CBox
+        'CBoxPos
         '
-        Me.CBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.CBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CBox.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CBox.ForeColor = System.Drawing.Color.Gainsboro
-        Me.CBox.FormattingEnabled = True
-        Me.CBox.Items.AddRange(New Object() {"Docente", "Administrador"})
-        Me.CBox.Location = New System.Drawing.Point(49, 296)
-        Me.CBox.Name = "CBox"
-        Me.CBox.Size = New System.Drawing.Size(256, 22)
-        Me.CBox.TabIndex = 4
+        Me.CBoxPos.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.CBoxPos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CBoxPos.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CBoxPos.ForeColor = System.Drawing.Color.Gainsboro
+        Me.CBoxPos.FormattingEnabled = True
+        Me.CBoxPos.Items.AddRange(New Object() {"Docente", "Administrador"})
+        Me.CBoxPos.Location = New System.Drawing.Point(49, 296)
+        Me.CBoxPos.Name = "CBoxPos"
+        Me.CBoxPos.Size = New System.Drawing.Size(256, 22)
+        Me.CBoxPos.TabIndex = 4
         '
         'FrmAjustes
         '
@@ -343,7 +343,7 @@ Partial Class FrmAjustes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(767, 509)
-        Me.Controls.Add(Me.CBox)
+        Me.Controls.Add(Me.CBoxPos)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Plndelu)
         Me.Controls.Add(Me.Lbladdu)
@@ -394,5 +394,5 @@ Partial Class FrmAjustes
     Friend WithEvents Txtuserdel As TextBox
     Friend WithEvents Lbldelu As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents CBox As ComboBox
+    Friend WithEvents CBoxPos As ComboBox
 End Class

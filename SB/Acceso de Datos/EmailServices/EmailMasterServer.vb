@@ -33,5 +33,5 @@ Public MustInherit Class EmailMasterServer
         End Try
 
     End Sub
-    'Programador: Andrey Guerrero
+
 End Class

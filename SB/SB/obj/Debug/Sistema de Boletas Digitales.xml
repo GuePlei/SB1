@@ -42,6 +42,16 @@ Sistema de Boletas Digitales
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:SB.My.Resources.Resources.Escudo2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SB.My.Resources.Resources.Escudo4">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SB.My.Resources.Resources.icons8_close_window_24px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

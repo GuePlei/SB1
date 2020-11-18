@@ -1,7 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports CapaComún
-
 Public Class UserDao
     Inherits ConnectionToSql
 #Region "SQL"
@@ -120,19 +119,17 @@ Public Class UserDao
 #End Region
 #Region "Email"
     Public Function Sentemail()
-
         Dim SystemSupport = New SystemSupportMail()
         SystemSupport.sendMail(
                         subject:="Nueva Boleta, del docente: " & ActiveUser.firstName + " " + ActiveUser.lastName,
                          body:="Estimado Auxiliar Adminitrativo, " & vbNewLine &
-                         "El Estudiante: " & ActiveUser.Estudiante + " " +
-                         "de la sección: " & ActiveUser.sec + " " +
+                         "El Estudiante: " & ActiveUser.Estudiante + ", " +
+                         "de la sección: " & ActiveUser.sec + ", " +
                          "ha infringido el reglamento de conducta al cometer la siguiente falta: " & ActiveUser.Motivo & vbNewLine,
                          receiverMail:=New List(Of String) From {ActiveUser.Correo})
         Return MessageBox.Show("¡Boleta enviada!", "¡Atención!",
                   MessageBoxButtons.OK, MessageBoxIcon.Warning)
     End Function
-
     Public Function RequestUserPassword(ByVal requestingUser As String) As String
         Using connection = GetConnection()
             connection.Open()
@@ -142,9 +139,7 @@ Public Class UserDao
                 command.Parameters.AddWithValue("@user", requestingUser)
                 command.Parameters.AddWithValue("@email", requestingUser)
                 command.CommandType = CommandType.Text
-
                 Dim reader As SqlDataReader = command.ExecuteReader()
-
                 If reader.Read = True Then
                     Dim userName As String = reader.GetString(3) & " " & reader.GetString(4)
                     Dim userMail As String = reader.GetString(6)
@@ -160,13 +155,10 @@ Public Class UserDao
                     Return "Hola " & userName & vbNewLine & "Has solicitado recuperar tu contraseña." & vbNewLine &
                         "Revisa tu correo electrónico: " & userMail & vbNewLine &
                         "Le pedimos que cambie su contraseña " & vbNewLine & "actual una vez acceda al sistema."
-
                 Else
                     Return "Esa dirección de correo/usuario" & vbNewLine & "no esta registrada en el sistema."
-
                 End If
             End Using
-
         End Using
     End Function
     Public Function Cargar_email()
@@ -192,10 +184,4 @@ Public Class UserDao
     End Function
 #End Region
 
-    Public Sub AnyMethod3()
-        If ActiveUser.position = Puestos.Docente Then
-            'codigo para el manager
-        End If
-    End Sub
-    'Programador: Andrey Guerrero
 End Class

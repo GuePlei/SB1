@@ -261,7 +261,7 @@ Partial Class FrmInicio
         Me.Lblem.AutoSize = True
         Me.Lblem.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lblem.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblem.Location = New System.Drawing.Point(21, 152)
+        Me.Lblem.Location = New System.Drawing.Point(10, 152)
         Me.Lblem.Name = "Lblem"
         Me.Lblem.Size = New System.Drawing.Size(35, 15)
         Me.Lblem.TabIndex = 2
@@ -272,7 +272,7 @@ Partial Class FrmInicio
         Me.LblName.AutoSize = True
         Me.LblName.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.LblName.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblName.Location = New System.Drawing.Point(21, 124)
+        Me.LblName.Location = New System.Drawing.Point(10, 97)
         Me.LblName.Name = "LblName"
         Me.LblName.Size = New System.Drawing.Size(48, 15)
         Me.LblName.TabIndex = 1
@@ -283,7 +283,7 @@ Partial Class FrmInicio
         Me.LblPos.AutoSize = True
         Me.LblPos.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.LblPos.ForeColor = System.Drawing.Color.Gainsboro
-        Me.LblPos.Location = New System.Drawing.Point(21, 97)
+        Me.LblPos.Location = New System.Drawing.Point(10, 124)
         Me.LblPos.Name = "LblPos"
         Me.LblPos.Size = New System.Drawing.Size(43, 15)
         Me.LblPos.TabIndex = 0
@@ -316,11 +316,11 @@ Partial Class FrmInicio
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.SB.My.Resources.Resources.Escudo1
-        Me.PictureBox1.Location = New System.Drawing.Point(858, 449)
+        Me.PictureBox1.Image = Global.SB.My.Resources.Resources.Escudo4
+        Me.PictureBox1.Location = New System.Drawing.Point(827, 418)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(96, 97)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.Size = New System.Drawing.Size(128, 128)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -329,6 +329,7 @@ Partial Class FrmInicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(955, 546)
         Me.Controls.Add(Me.PanelContenedor)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -348,7 +349,6 @@ Partial Class FrmInicio
         Me.Panel1.PerformLayout()
         CType(Me.PbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFrms.ResumeLayout(False)
-        Me.PanelFrms.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

@@ -23,43 +23,34 @@ Partial Class FrmListUser
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.BoletasDigitalesDataSet = New SB.BoletasDigitalesDataSet()
-        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.UsersTableAdapter = New SB.BoletasDigitalesDataSetTableAdapters.UsersTableAdapter()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Plnhead = New System.Windows.Forms.Panel()
         Me.Lblh = New System.Windows.Forms.Label()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DGV = New System.Windows.Forms.DataGridView()
         Me.LoginNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PasswordDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FirstNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LastNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PositionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BoletasDigitalesDataSet = New SB.BoletasDigitalesDataSet()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
-        CType(Me.BoletasDigitalesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.UsersTableAdapter = New SB.BoletasDigitalesDataSetTableAdapters.UsersTableAdapter()
         Me.Plnhead.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BoletasDigitalesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BoletasDigitalesDataSet
-        '
-        Me.BoletasDigitalesDataSet.DataSetName = "BoletasDigitalesDataSet"
-        Me.BoletasDigitalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'UsersBindingSource
-        '
-        Me.UsersBindingSource.DataMember = "Users"
-        Me.UsersBindingSource.DataSource = Me.BoletasDigitalesDataSet
-        '
-        'UsersTableAdapter
-        '
-        Me.UsersTableAdapter.ClearBeforeFill = True
         '
         'Plnhead
         '
         Me.Plnhead.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Plnhead.Controls.Add(Me.BtnClose)
         Me.Plnhead.Controls.Add(Me.Lblh)
         Me.Plnhead.Dock = System.Windows.Forms.DockStyle.Top
         Me.Plnhead.Location = New System.Drawing.Point(0, 0)
@@ -72,28 +63,71 @@ Partial Class FrmListUser
         Me.Lblh.AutoSize = True
         Me.Lblh.Font = New System.Drawing.Font("Roboto Condensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblh.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblh.Location = New System.Drawing.Point(475, 9)
+        Me.Lblh.Location = New System.Drawing.Point(2, 8)
         Me.Lblh.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblh.Name = "Lblh"
         Me.Lblh.Size = New System.Drawing.Size(108, 18)
         Me.Lblh.TabIndex = 79
         Me.Lblh.Text = "Lista de Usuarios"
         '
-        'DataGridView2
+        'DGV
         '
-        Me.DataGridView2.AllowUserToAddRows = False
-        Me.DataGridView2.AllowUserToDeleteRows = False
-        Me.DataGridView2.AutoGenerateColumns = False
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginNameDataGridViewTextBoxColumn, Me.PasswordDataGridViewTextBoxColumn, Me.FirstNameDataGridViewTextBoxColumn, Me.LastNameDataGridViewTextBoxColumn, Me.PositionDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn})
-        Me.DataGridView2.DataSource = Me.UsersBindingSource
-        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView2.Location = New System.Drawing.Point(0, 34)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.ReadOnly = True
-        Me.DataGridView2.Size = New System.Drawing.Size(594, 469)
-        Me.DataGridView2.TabIndex = 7
+        Me.DGV.AllowUserToAddRows = False
+        Me.DGV.AllowUserToDeleteRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Roboto Condensed", 9.0!)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro
+        Me.DGV.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DGV.AutoGenerateColumns = False
+        Me.DGV.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.DGV.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Roboto Condensed", 10.0!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginNameDataGridViewTextBoxColumn, Me.FirstNameDataGridViewTextBoxColumn, Me.LastNameDataGridViewTextBoxColumn, Me.PositionDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn})
+        Me.DGV.DataSource = Me.UsersBindingSource
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Roboto Condensed", 9.0!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DGV.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DGV.GridColor = System.Drawing.Color.Gainsboro
+        Me.DGV.Location = New System.Drawing.Point(0, 34)
+        Me.DGV.Name = "DGV"
+        Me.DGV.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Gainsboro
+        Me.DGV.RowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.DGV.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.DGV.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Roboto Condensed", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Gainsboro
+        Me.DGV.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.DGV.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Gainsboro
+        Me.DGV.Size = New System.Drawing.Size(594, 469)
+        Me.DGV.TabIndex = 7
         '
         'LoginNameDataGridViewTextBoxColumn
         '
@@ -101,14 +135,6 @@ Partial Class FrmListUser
         Me.LoginNameDataGridViewTextBoxColumn.HeaderText = "Usuario"
         Me.LoginNameDataGridViewTextBoxColumn.Name = "LoginNameDataGridViewTextBoxColumn"
         Me.LoginNameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'PasswordDataGridViewTextBoxColumn
-        '
-        Me.PasswordDataGridViewTextBoxColumn.DataPropertyName = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.HeaderText = "Password"
-        Me.PasswordDataGridViewTextBoxColumn.Name = "PasswordDataGridViewTextBoxColumn"
-        Me.PasswordDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PasswordDataGridViewTextBoxColumn.Visible = False
         '
         'FirstNameDataGridViewTextBoxColumn
         '
@@ -139,11 +165,21 @@ Partial Class FrmListUser
         Me.EmailDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmailDataGridViewTextBoxColumn.Width = 150
         '
+        'UsersBindingSource
+        '
+        Me.UsersBindingSource.DataMember = "Users"
+        Me.UsersBindingSource.DataSource = Me.BoletasDigitalesDataSet
+        '
+        'BoletasDigitalesDataSet
+        '
+        Me.BoletasDigitalesDataSet.DataSetName = "BoletasDigitalesDataSet"
+        Me.BoletasDigitalesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'BtnClose
         '
         Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
-        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
+        Me.BtnClose.Location = New System.Drawing.Point(568, 2)
         Me.BtnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.BtnClose.Name = "BtnClose"
         Me.BtnClose.Size = New System.Drawing.Size(24, 24)
@@ -151,36 +187,38 @@ Partial Class FrmListUser
         Me.BtnClose.TabIndex = 12
         Me.BtnClose.TabStop = False
         '
+        'UsersTableAdapter
+        '
+        Me.UsersTableAdapter.ClearBeforeFill = True
+        '
         'FrmListUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(594, 503)
-        Me.Controls.Add(Me.BtnClose)
-        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.DGV)
         Me.Controls.Add(Me.Plnhead)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmListUser"
+        Me.Opacity = 0.95R
         Me.Text = "FrmListUser"
-        CType(Me.BoletasDigitalesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Plnhead.ResumeLayout(False)
         Me.Plnhead.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BoletasDigitalesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BoletasDigitalesDataSet As BoletasDigitalesDataSet
     Friend WithEvents UsersBindingSource As BindingSource
     Friend WithEvents UsersTableAdapter As BoletasDigitalesDataSetTableAdapters.UsersTableAdapter
     Friend WithEvents Plnhead As Panel
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents DGV As DataGridView
     Friend WithEvents Lblh As Label
     Friend WithEvents LoginNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents FirstNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LastNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PositionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn

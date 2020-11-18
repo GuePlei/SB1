@@ -145,5 +145,5 @@ Public Class UserModel
             'codigo para el CEO
         End If
     End Sub
-    'Programador: Andrey Guerrero
+
 End Class

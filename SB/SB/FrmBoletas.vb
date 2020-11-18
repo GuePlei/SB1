@@ -57,5 +57,5 @@ Public Class FrmBoletas
     Private Sub Pbclose_MouseEnter(sender As Object, e As EventArgs) Handles Pbclose.MouseEnter
         Pbclose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
-    'Programador: Andrey Guerrero
+
 End Class

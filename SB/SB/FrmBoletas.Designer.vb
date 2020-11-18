@@ -52,6 +52,7 @@ Partial Class FrmBoletas
         '
         'Plnbole
         '
+        Me.Plnbole.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
         Me.Plnbole.Controls.Add(Me.Lblbole)
         Me.Plnbole.Controls.Add(Me.Txtsec)
         Me.Plnbole.Controls.Add(Me.Lblsect)
@@ -168,7 +169,7 @@ Partial Class FrmBoletas
         '
         'Plncomf
         '
-        Me.Plncomf.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.Plncomf.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Plncomf.Controls.Add(Me.Lblcomf)
         Me.Plncomf.Controls.Add(Me.Pbclose)
         Me.Plncomf.Controls.Add(Me.Lblsec)
@@ -253,7 +254,7 @@ Partial Class FrmBoletas
         Me.Lblprof.AutoSize = True
         Me.Lblprof.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblprof.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblprof.Location = New System.Drawing.Point(68, 207)
+        Me.Lblprof.Location = New System.Drawing.Point(68, 210)
         Me.Lblprof.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblprof.Name = "Lblprof"
         Me.Lblprof.Size = New System.Drawing.Size(0, 15)

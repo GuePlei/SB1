@@ -252,6 +252,8 @@
     <None Include="Resources\Escudo.png" />
     <None Include="Resources\Escudo1.png" />
     <None Include="Resources\editprofile.png" />
+    <None Include="Resources\Escudo2.png" />
+    <None Include="Resources\Escudo4.png" />
     <Content Include="Resources\icons8_agreement_3.ico" />
     <None Include="Resources\icons8_male_user_256px1.png" />
     <None Include="Resources\icons8_male_user_256px.png" />

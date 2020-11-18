@@ -8,5 +8,5 @@ Public MustInherit Class ConnectionToSql
     Protected Function GetConnection() As SQLConnection
         Return New SQLConnection(connectionString)
     End Function
-    'Programador: Andrey Guerrero
+
 End Class
