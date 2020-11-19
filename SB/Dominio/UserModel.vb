@@ -93,7 +93,7 @@ Public Class UserModel
         Me.Position1 = position
         Me.Email1 = email
     End Sub
-    Public Sub New(ID As Object, Correo As Object)
+    Public Sub New(ID As Object)
         Me.ID1 = ID
 
     End Sub
@@ -112,11 +112,9 @@ Public Class UserModel
 #End Region
     Public Function sentemail()
         Return userDao.Sentemail
-
     End Function
     Public Function RecoverPassword(requestingUser As String) As String
         Return userDao.RequestUserPassword(requestingUser)
-
     End Function
     Public Function cargaremail()
         Return userDao.Cargar_email()
@@ -137,13 +135,4 @@ Public Class UserModel
             Return False
         End If
     End Function
-    Public Sub AnyMethod4()
-        If ActiveUser.position = "Manager" Then
-            'codigo para el manager
-        End If
-        If ActiveUser.position = "CEO" Then
-            'codigo para el CEO
-        End If
-    End Sub
-
 End Class

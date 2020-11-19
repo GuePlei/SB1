@@ -2,17 +2,26 @@
 Imports Dominio
 Public Class FrmLogin
     Dim M As Integer
+    Dim I As Integer
+    Sub internetcheck()
+        Try
+            If My.Computer.Network.Ping("172.217.2.206") Then
+                I = 1
+            Else
+                I = 0
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
     Private Sub BtnClose_Click(sender As Object, e As EventArgs) Handles BtnClose.Click
         If MessageBox.Show("¿Estás seguro de querer cerrar la aplicación?", "¡Atención!",
                   MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.Yes Then
             Application.Exit()
         End If
     End Sub
-
     Private Sub BtnMini_Click(sender As Object, e As EventArgs) Handles BtnMini.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-
     Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
         BtnClose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
@@ -30,9 +39,13 @@ Public Class FrmLogin
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-
     Private Sub BtnLog_Click(sender As Object, e As EventArgs) Handles BtnLog.Click
-        login()
+        internetcheck()
+        If I = 1 Then
+            Login()
+        ElseIf I = 0 Then
+            MsgBox("No hay conexión a Internet", MsgBoxStyle.Exclamation, "Error")
+        End If
     End Sub
     Private Sub Login()
         Dim userModel As New UserModel
@@ -49,7 +62,6 @@ Public Class FrmLogin
             TxtPass.Focus()
         End If
     End Sub
-
     Private Sub TxtPass_KeyDown(sender As Object, e As KeyEventArgs) Handles TxtPass.KeyDown
         If e.KeyCode = Keys.Enter Then
             Login()
@@ -62,7 +74,6 @@ Public Class FrmLogin
         Me.Show()
         TxtUser.Focus()
     End Sub
-
     Private Sub BtnPasshidden_Click(sender As Object, e As EventArgs) Handles BtnPasshidden.Click
 
         If M = 0 Then
@@ -77,10 +88,8 @@ Public Class FrmLogin
             End If
         End If
     End Sub
-
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Btnrepass.LinkClicked
         Dim Recuperar_Contraseña As New Recuperar_Contraseña()
         Recuperar_Contraseña.ShowDialog()
     End Sub
-
 End Class

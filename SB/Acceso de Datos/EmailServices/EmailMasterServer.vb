@@ -7,14 +7,14 @@ Public MustInherit Class EmailMasterServer
     Protected host As String
     Protected port As Integer
     Protected ssl As Boolean
-    Protected Sub initalizeSmtpClient()
+    Protected Sub InitalizeSmtpClient()
         smtpClient = New SmtpClient()
         smtpClient.Credentials = New NetworkCredential(senderMail, password)
         smtpClient.Host = host
         smtpClient.Port = port
         smtpClient.EnableSsl = ssl
     End Sub
-    Public Sub sendMail(ByVal subject As String, ByVal body As String, ByVal receiverMail As List(Of String))
+    Public Sub SendMail(ByVal subject As String, ByVal body As String, ByVal receiverMail As List(Of String))
         Dim mailMessage As MailMessage = New MailMessage
         Try
             mailMessage.From = New MailAddress(senderMail)
@@ -25,13 +25,10 @@ Public MustInherit Class EmailMasterServer
             mailMessage.Body = body
             mailMessage.Priority = MailPriority.Normal
             smtpClient.Send(mailMessage)
-
         Catch ex As Exception
         Finally
             mailMessage.Dispose()
             smtpClient.Dispose()
         End Try
-
     End Sub
-
 End Class

@@ -4,7 +4,7 @@ Imports CapaComún
 Public Class UserDao
     Inherits ConnectionToSql
 #Region "SQL"
-    Public Sub editProfile(id, user, pass, name, lastName, mail)
+    Public Sub EditProfile(id, user, pass, name, lastName, mail)
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
@@ -21,7 +21,7 @@ Public Class UserDao
             End Using
         End Using
     End Sub
-    Public Sub addProfile(LoginName, password, firstname, lastName, position, email)
+    Public Sub AddProfile(LoginName, password, firstname, lastName, position, email)
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
@@ -38,7 +38,7 @@ Public Class UserDao
             End Using
         End Using
     End Sub
-    Public Sub borrar(LoginName)
+    Public Sub Borrar(LoginName)
         Using connection = GetConnection()
             connection.Open()
             Using command = New SqlCommand()
@@ -78,7 +78,7 @@ Public Class UserDao
             End Using
         End Using
     End Function
-    Public Function delnames(delname As String) As Boolean
+    Public Function Delnames(delname As String) As Boolean
         Using Connection = GetConnection()
             Connection.Open()
             Using Command = New SqlCommand
