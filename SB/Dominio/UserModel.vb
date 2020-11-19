@@ -110,13 +110,13 @@ Public Class UserModel
         End Try
     End Function
 #End Region
-    Public Function sentemail()
+    Public Function Sentemail()
         Return userDao.Sentemail
     End Function
     Public Function RecoverPassword(requestingUser As String) As String
         Return userDao.RequestUserPassword(requestingUser)
     End Function
-    Public Function cargaremail()
+    Public Function Cargaremail()
         Return userDao.Cargar_email()
     End Function
     Public Function Login(user As String, Password As String) As Boolean

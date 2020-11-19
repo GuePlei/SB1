@@ -2,7 +2,7 @@
 Imports Dominio
 Public Class FrmBoletas
     Dim I As Integer
-    Sub internetcheck()
+    Sub Internetcheck()
         Try
             If My.Computer.Network.Ping("172.217.2.206") Then
                 I = 1
@@ -53,7 +53,7 @@ Public Class FrmBoletas
         Dim result = userModel.sentemail()
         limpiar()
     End Sub
-    Sub limpiar()
+    Sub Limpiar()
         Txtmotiv.Text = ""
         Txtsec.Text = ""
         Txtest.Text = ""
@@ -67,7 +67,7 @@ Public Class FrmBoletas
     Private Sub Pbclose_MouseEnter(sender As Object, e As EventArgs) Handles Pbclose.MouseEnter
         Pbclose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
-    Private Sub confirmardatos()
+    Private Sub Confirmardatos()
         If Txtsec.Text = "" Or Txtmotiv.Text = "" Or Txtest.Text = "" Then
             MsgBox("No puede dejar los campos de texto en blanco", MsgBoxStyle.Exclamation, "Error")
         Else

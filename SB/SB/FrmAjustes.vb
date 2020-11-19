@@ -28,7 +28,7 @@ Public Class FrmAjustes
         End If
         FrmListUser.UsersTableAdapter.Fill(FrmListUser.BoletasDigitalesDataSet.Users)
     End Sub
-    Sub limpiar()
+    Sub Limpiar()
         Txtuser.Text = ""
         Txtnewpass.Text = ""
         Txtname.Text = ""
@@ -37,9 +37,9 @@ Public Class FrmAjustes
         Txtemail.Text = ""
         Txtcomfpass.Text = ""
     End Sub
-    Private Sub validdel()
+    Private Sub Validdel()
         Dim userModelC As New UserModelC
-        Dim validdel = userModelC.delnames(Txtuserdel.Text)
+        Dim validdel = userModelC.Delnames(Txtuserdel.Text)
         If validdel = False Then
             MessageBox.Show("Nombre de usuario inexistente")
         Else
@@ -50,7 +50,7 @@ Public Class FrmAjustes
 
                     Dim userModelB As New UserModelB(
                                                      LoginName:=Txtuserdel.Text)
-                    Dim result = userModelB.borrar
+                    Dim result = userModelB.Borrar
                     MessageBox.Show(result)
                     Txtuserdel.Text = ""
                 End If

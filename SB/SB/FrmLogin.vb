@@ -3,7 +3,7 @@ Imports Dominio
 Public Class FrmLogin
     Dim M As Integer
     Dim I As Integer
-    Sub internetcheck()
+    Sub Internetcheck()
         Try
             If My.Computer.Network.Ping("172.217.2.206") Then
                 I = 1

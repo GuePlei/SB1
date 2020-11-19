@@ -2,7 +2,7 @@
 Imports Dominio
 Public Class Recuperar_Contraseña
     Dim I As Integer
-    Sub internetcheck()
+    Sub Internetcheck()
         Try
             If My.Computer.Network.Ping("172.217.2.206") Then
                 I = 1

@@ -8,11 +8,12 @@ Public MustInherit Class EmailMasterServer
     Protected port As Integer
     Protected ssl As Boolean
     Protected Sub InitalizeSmtpClient()
-        smtpClient = New SmtpClient()
-        smtpClient.Credentials = New NetworkCredential(senderMail, password)
-        smtpClient.Host = host
-        smtpClient.Port = port
-        smtpClient.EnableSsl = ssl
+        smtpClient = New SmtpClient With {
+            .Credentials = New NetworkCredential(senderMail, password),
+            .Host = host,
+            .Port = port,
+            .EnableSsl = ssl
+        }
     End Sub
     Public Sub SendMail(ByVal subject As String, ByVal body As String, ByVal receiverMail As List(Of String))
         Dim mailMessage As MailMessage = New MailMessage

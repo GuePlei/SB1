@@ -26,7 +26,7 @@ Public Class UserModelB
             Password = value
         End Set
     End Property
-    Public Property firstName1 As Object
+    Public Property FirstName1 As Object
         Get
             Return firstName
         End Get
@@ -35,7 +35,7 @@ Public Class UserModelB
         End Set
     End Property
 
-    Public Property lastName1 As Object
+    Public Property LastName1 As Object
         Get
             Return lastName
         End Get
@@ -44,7 +44,7 @@ Public Class UserModelB
         End Set
     End Property
 
-    Public Property position1 As Object
+    Public Property Position1 As Object
         Get
             Return position
         End Get
@@ -53,7 +53,7 @@ Public Class UserModelB
         End Set
     End Property
 
-    Public Property email1 As Object
+    Public Property Email1 As Object
         Get
             Return email
         End Get
@@ -74,18 +74,18 @@ Public Class UserModelB
         Me.email1 = email
     End Sub
 #End Region
-    Public Function addprofile() As String
+    Public Function Addprofile() As String
         Try
-            userDao.addProfile(LoginName, Password, firstName, lastName, position, email)
+            userDao.AddProfile(LoginName, Password, firstName, lastName, position, email)
 
             Return "Usuario agregado correctamente"
         Catch ex As Exception
             Return "Nombre de usuario ya en uso"
         End Try
     End Function
-    Public Function borrar() As String
+    Public Function Borrar() As String
         Try
-            userDao.borrar(LoginName)
+            userDao.Borrar(LoginName)
             Return "Usuario borrado correctamente"
         Catch ex As Exception
             Return Nothing
