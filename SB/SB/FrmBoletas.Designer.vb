@@ -216,7 +216,7 @@ Partial Class FrmBoletas
         Me.Lblsec.AutoSize = True
         Me.Lblsec.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblsec.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblsec.Location = New System.Drawing.Point(68, 159)
+        Me.Lblsec.Location = New System.Drawing.Point(68, 154)
         Me.Lblsec.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblsec.Name = "Lblsec"
         Me.Lblsec.Size = New System.Drawing.Size(0, 15)
@@ -254,7 +254,7 @@ Partial Class FrmBoletas
         Me.Lblprof.AutoSize = True
         Me.Lblprof.Font = New System.Drawing.Font("Roboto Condensed", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Lblprof.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Lblprof.Location = New System.Drawing.Point(68, 210)
+        Me.Lblprof.Location = New System.Drawing.Point(68, 216)
         Me.Lblprof.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblprof.Name = "Lblprof"
         Me.Lblprof.Size = New System.Drawing.Size(0, 15)

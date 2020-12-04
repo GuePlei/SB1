@@ -46,6 +46,8 @@ Partial Class FrmInicio
         Me.BtnBole = New System.Windows.Forms.Button()
         Me.PanelFrms = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PanelContenedor.SuspendLayout()
         Me.PlnHead.SuspendLayout()
         CType(Me.BtnMini, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,6 +133,8 @@ Partial Class FrmInicio
         'PlnMenu
         '
         Me.PlnMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.PlnMenu.Controls.Add(Me.Panel2)
+        Me.PlnMenu.Controls.Add(Me.Button1)
         Me.PlnMenu.Controls.Add(Me.Panel5)
         Me.PlnMenu.Controls.Add(Me.Panel6)
         Me.PlnMenu.Controls.Add(Me.Btneditar)
@@ -158,7 +162,7 @@ Partial Class FrmInicio
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer))
-        Me.Panel6.Location = New System.Drawing.Point(0, 418)
+        Me.Panel6.Location = New System.Drawing.Point(0, 388)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(10, 32)
         Me.Panel6.TabIndex = 9
@@ -171,11 +175,11 @@ Partial Class FrmInicio
         Me.Btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Btneditar.Font = New System.Drawing.Font("Roboto Condensed", 9.0!)
         Me.Btneditar.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Btneditar.Location = New System.Drawing.Point(3, 418)
+        Me.Btneditar.Location = New System.Drawing.Point(3, 388)
         Me.Btneditar.Name = "Btneditar"
         Me.Btneditar.Size = New System.Drawing.Size(182, 32)
         Me.Btneditar.TabIndex = 1
-        Me.Btneditar.Text = "Editar Perfil"
+        Me.Btneditar.Text = "Mi Perfil"
         Me.Btneditar.UseVisualStyleBackColor = True
         '
         'Panel4
@@ -324,6 +328,29 @@ Partial Class FrmInicio
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(107, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Roboto Condensed", 9.0!)
+        Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button1.Location = New System.Drawing.Point(3, 426)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(182, 32)
+        Me.Button1.TabIndex = 11
+        Me.Button1.Text = "Acerca de"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(61, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(0, 426)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(10, 32)
+        Me.Panel2.TabIndex = 12
+        '
         'FrmInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -377,4 +404,6 @@ Partial Class FrmInicio
     Friend WithEvents Panel7 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Lblh As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button1 As Button
 End Class

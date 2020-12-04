@@ -42,7 +42,7 @@ Partial Class FrmAjustes
         Me.Btndel = New System.Windows.Forms.Button()
         Me.Txtuserdel = New System.Windows.Forms.TextBox()
         Me.Lbldelu = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ListUser = New System.Windows.Forms.Button()
         Me.BtnClose = New System.Windows.Forms.PictureBox()
         Me.CBoxPos = New System.Windows.Forms.ComboBox()
         Me.Plndelu.SuspendLayout()
@@ -299,19 +299,19 @@ Partial Class FrmAjustes
         Me.Lbldelu.TabIndex = 75
         Me.Lbldelu.Text = "Nombre de Usuario a borrar:"
         '
-        'Button1
+        'ListUser
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Location = New System.Drawing.Point(431, 475)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 31)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Usuarios"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ListUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.ListUser.FlatAppearance.BorderSize = 0
+        Me.ListUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ListUser.Font = New System.Drawing.Font("Roboto Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListUser.ForeColor = System.Drawing.Color.Gainsboro
+        Me.ListUser.Location = New System.Drawing.Point(431, 475)
+        Me.ListUser.Name = "ListUser"
+        Me.ListUser.Size = New System.Drawing.Size(104, 31)
+        Me.ListUser.TabIndex = 8
+        Me.ListUser.Text = "Usuarios"
+        Me.ListUser.UseVisualStyleBackColor = False
         '
         'BtnClose
         '
@@ -344,7 +344,7 @@ Partial Class FrmAjustes
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(767, 509)
         Me.Controls.Add(Me.CBoxPos)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ListUser)
         Me.Controls.Add(Me.Plndelu)
         Me.Controls.Add(Me.Lbladdu)
         Me.Controls.Add(Me.Txtcomfpass)
@@ -393,6 +393,6 @@ Partial Class FrmAjustes
     Friend WithEvents Btndel As Button
     Friend WithEvents Txtuserdel As TextBox
     Friend WithEvents Lbldelu As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ListUser As Button
     Friend WithEvents CBoxPos As ComboBox
 End Class

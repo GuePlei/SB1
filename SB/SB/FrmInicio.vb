@@ -88,21 +88,15 @@ Public Class FrmInicio
             Panel7.Visible = True
         End If
     End Sub
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Btneditar.Click
-        OpenChildForm(New FrmEditar)
-    End Sub
-
-
     Private Sub Lblh_MouseMove(sender As Object, e As MouseEventArgs) Handles Lblh.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-
     Private Sub PbLogo_MouseMove(sender As Object, e As MouseEventArgs) Handles PbLogo.MouseMove
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
-
-
+    Private Sub Btneditar_Click(sender As Object, e As EventArgs) Handles Btneditar.Click
+        OpenChildForm(New FrmEditar)
+    End Sub
 End Class

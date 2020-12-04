@@ -34,7 +34,9 @@ Partial Class FrmEditar
         Me.Lbluser = New System.Windows.Forms.Label()
         Me.Lbllname = New System.Windows.Forms.Label()
         Me.Lblemail = New System.Windows.Forms.Label()
+        Me.BtnClose = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PBuser = New System.Windows.Forms.PictureBox()
         Me.Plneditarperf = New System.Windows.Forms.Panel()
         Me.Btncancel = New System.Windows.Forms.Button()
         Me.LinkEdit = New System.Windows.Forms.LinkLabel()
@@ -54,12 +56,10 @@ Partial Class FrmEditar
         Me.Lbllname1 = New System.Windows.Forms.Label()
         Me.Lblemail1 = New System.Windows.Forms.Label()
         Me.Lbleditperf = New System.Windows.Forms.Label()
-        Me.BtnClose = New System.Windows.Forms.PictureBox()
-        Me.PBuser = New System.Windows.Forms.PictureBox()
         Me.Plnperfil.SuspendLayout()
-        Me.Plneditarperf.SuspendLayout()
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBuser, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Plneditarperf.SuspendLayout()
         Me.SuspendLayout()
         '
         'Plnperfil
@@ -83,7 +83,7 @@ Partial Class FrmEditar
         Me.Plnperfil.Margin = New System.Windows.Forms.Padding(2)
         Me.Plnperfil.Name = "Plnperfil"
         Me.Plnperfil.Size = New System.Drawing.Size(482, 503)
-        Me.Plnperfil.TabIndex = 4
+        Me.Plnperfil.TabIndex = 99
         '
         'LinkLabel1
         '
@@ -94,68 +94,68 @@ Partial Class FrmEditar
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(34, 13)
-        Me.LinkLabel1.TabIndex = 36
+        Me.LinkLabel1.TabIndex = 0
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Editar"
         '
         'Lblposited
         '
         Me.Lblposited.AutoSize = True
-        Me.Lblposited.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblposited.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lblposited.ForeColor = System.Drawing.Color.Gainsboro
         Me.Lblposited.Location = New System.Drawing.Point(277, 308)
         Me.Lblposited.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblposited.Name = "Lblposited"
-        Me.Lblposited.Size = New System.Drawing.Size(43, 13)
-        Me.Lblposited.TabIndex = 18
+        Me.Lblposited.Size = New System.Drawing.Size(49, 15)
+        Me.Lblposited.TabIndex = 99
         Me.Lblposited.Text = "position"
         '
         'Lblemailed
         '
         Me.Lblemailed.AutoSize = True
-        Me.Lblemailed.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblemailed.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lblemailed.ForeColor = System.Drawing.Color.Gainsboro
         Me.Lblemailed.Location = New System.Drawing.Point(277, 253)
         Me.Lblemailed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblemailed.Name = "Lblemailed"
-        Me.Lblemailed.Size = New System.Drawing.Size(31, 13)
-        Me.Lblemailed.TabIndex = 17
+        Me.Lblemailed.Size = New System.Drawing.Size(35, 15)
+        Me.Lblemailed.TabIndex = 99
         Me.Lblemailed.Text = "email"
         '
         'Lbllnameed
         '
         Me.Lbllnameed.AutoSize = True
-        Me.Lbllnameed.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbllnameed.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lbllnameed.ForeColor = System.Drawing.Color.Gainsboro
         Me.Lbllnameed.Location = New System.Drawing.Point(277, 195)
         Me.Lbllnameed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbllnameed.Name = "Lbllnameed"
-        Me.Lbllnameed.Size = New System.Drawing.Size(33, 13)
-        Me.Lbllnameed.TabIndex = 16
+        Me.Lbllnameed.Size = New System.Drawing.Size(38, 15)
+        Me.Lbllnameed.TabIndex = 99
         Me.Lbllnameed.Text = "lname"
         '
         'Lblnameed
         '
         Me.Lblnameed.AutoSize = True
-        Me.Lblnameed.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblnameed.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lblnameed.ForeColor = System.Drawing.Color.Gainsboro
         Me.Lblnameed.Location = New System.Drawing.Point(277, 135)
         Me.Lblnameed.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblnameed.Name = "Lblnameed"
-        Me.Lblnameed.Size = New System.Drawing.Size(30, 13)
-        Me.Lblnameed.TabIndex = 15
+        Me.Lblnameed.Size = New System.Drawing.Size(35, 15)
+        Me.Lblnameed.TabIndex = 99
         Me.Lblnameed.Text = "name"
         '
         'Lblusered
         '
         Me.Lblusered.AutoSize = True
-        Me.Lblusered.Font = New System.Drawing.Font("Roboto Condensed", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lblusered.Font = New System.Drawing.Font("Roboto Condensed", 9.5!)
         Me.Lblusered.ForeColor = System.Drawing.Color.Gainsboro
         Me.Lblusered.Location = New System.Drawing.Point(277, 75)
         Me.Lblusered.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblusered.Name = "Lblusered"
-        Me.Lblusered.Size = New System.Drawing.Size(25, 13)
-        Me.Lblusered.TabIndex = 14
+        Me.Lblusered.Size = New System.Drawing.Size(29, 15)
+        Me.Lblusered.TabIndex = 99
         Me.Lblusered.Text = "user"
         '
         'Lblposit
@@ -168,7 +168,7 @@ Partial Class FrmEditar
         Me.Lblposit.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblposit.Name = "Lblposit"
         Me.Lblposit.Size = New System.Drawing.Size(58, 19)
-        Me.Lblposit.TabIndex = 13
+        Me.Lblposit.TabIndex = 99
         Me.Lblposit.Text = "Puesto:"
         '
         'Lblname
@@ -180,7 +180,7 @@ Partial Class FrmEditar
         Me.Lblname.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblname.Name = "Lblname"
         Me.Lblname.Size = New System.Drawing.Size(64, 19)
-        Me.Lblname.TabIndex = 12
+        Me.Lblname.TabIndex = 99
         Me.Lblname.Text = "Nombre:"
         '
         'Lbluser
@@ -192,7 +192,7 @@ Partial Class FrmEditar
         Me.Lbluser.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbluser.Name = "Lbluser"
         Me.Lbluser.Size = New System.Drawing.Size(137, 19)
-        Me.Lbluser.TabIndex = 11
+        Me.Lbluser.TabIndex = 99
         Me.Lbluser.Text = "Nombre de Usuario:"
         '
         'Lbllname
@@ -204,7 +204,7 @@ Partial Class FrmEditar
         Me.Lbllname.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lbllname.Name = "Lbllname"
         Me.Lbllname.Size = New System.Drawing.Size(66, 19)
-        Me.Lbllname.TabIndex = 10
+        Me.Lbllname.TabIndex = 99
         Me.Lbllname.Text = "Apellido:"
         '
         'Lblemail
@@ -216,8 +216,20 @@ Partial Class FrmEditar
         Me.Lblemail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Lblemail.Name = "Lblemail"
         Me.Lblemail.Size = New System.Drawing.Size(49, 19)
-        Me.Lblemail.TabIndex = 9
+        Me.Lblemail.TabIndex = 99
         Me.Lblemail.Text = "Email:"
+        '
+        'BtnClose
+        '
+        Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
+        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
+        Me.BtnClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnClose.Name = "BtnClose"
+        Me.BtnClose.Size = New System.Drawing.Size(24, 24)
+        Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.BtnClose.TabIndex = 8
+        Me.BtnClose.TabStop = False
         '
         'Label1
         '
@@ -230,6 +242,18 @@ Partial Class FrmEditar
         Me.Label1.Size = New System.Drawing.Size(86, 28)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Mi Perfil"
+        '
+        'PBuser
+        '
+        Me.PBuser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PBuser.Image = Global.SB.My.Resources.Resources.editprofile
+        Me.PBuser.Location = New System.Drawing.Point(8, 60)
+        Me.PBuser.Margin = New System.Windows.Forms.Padding(2)
+        Me.PBuser.Name = "PBuser"
+        Me.PBuser.Size = New System.Drawing.Size(256, 256)
+        Me.PBuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PBuser.TabIndex = 6
+        Me.PBuser.TabStop = False
         '
         'Plneditarperf
         '
@@ -271,7 +295,7 @@ Partial Class FrmEditar
         Me.Btncancel.Location = New System.Drawing.Point(154, 430)
         Me.Btncancel.Name = "Btncancel"
         Me.Btncancel.Size = New System.Drawing.Size(116, 50)
-        Me.Btncancel.TabIndex = 36
+        Me.Btncancel.TabIndex = 8
         Me.Btncancel.Text = "Cancelar"
         Me.Btncancel.UseVisualStyleBackColor = False
         '
@@ -300,7 +324,7 @@ Partial Class FrmEditar
         Me.Txtcomfpass.Name = "Txtcomfpass"
         Me.Txtcomfpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Txtcomfpass.Size = New System.Drawing.Size(256, 21)
-        Me.Txtcomfpass.TabIndex = 34
+        Me.Txtcomfpass.TabIndex = 6
         '
         'Lblconfpass
         '
@@ -326,7 +350,7 @@ Partial Class FrmEditar
         Me.Txtnewpass.Name = "Txtnewpass"
         Me.Txtnewpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.Txtnewpass.Size = New System.Drawing.Size(256, 21)
-        Me.Txtnewpass.TabIndex = 32
+        Me.Txtnewpass.TabIndex = 5
         '
         'Lblnewpass
         '
@@ -351,7 +375,7 @@ Partial Class FrmEditar
         Me.Btnsave.Location = New System.Drawing.Point(14, 430)
         Me.Btnsave.Name = "Btnsave"
         Me.Btnsave.Size = New System.Drawing.Size(116, 50)
-        Me.Btnsave.TabIndex = 30
+        Me.Btnsave.TabIndex = 7
         Me.Btnsave.Text = "Guardar"
         Me.Btnsave.UseVisualStyleBackColor = False
         '
@@ -365,7 +389,7 @@ Partial Class FrmEditar
         Me.Txtactualpass.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtactualpass.Name = "Txtactualpass"
         Me.Txtactualpass.Size = New System.Drawing.Size(256, 21)
-        Me.Txtactualpass.TabIndex = 29
+        Me.Txtactualpass.TabIndex = 4
         '
         'Txtemail
         '
@@ -377,7 +401,7 @@ Partial Class FrmEditar
         Me.Txtemail.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtemail.Name = "Txtemail"
         Me.Txtemail.Size = New System.Drawing.Size(256, 21)
-        Me.Txtemail.TabIndex = 28
+        Me.Txtemail.TabIndex = 3
         '
         'Txtlname
         '
@@ -389,7 +413,7 @@ Partial Class FrmEditar
         Me.Txtlname.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtlname.Name = "Txtlname"
         Me.Txtlname.Size = New System.Drawing.Size(256, 21)
-        Me.Txtlname.TabIndex = 27
+        Me.Txtlname.TabIndex = 2
         '
         'Txtname
         '
@@ -401,17 +425,19 @@ Partial Class FrmEditar
         Me.Txtname.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtname.Name = "Txtname"
         Me.Txtname.Size = New System.Drawing.Size(256, 21)
-        Me.Txtname.TabIndex = 26
+        Me.Txtname.TabIndex = 1
         '
         'Txtuser
         '
         Me.Txtuser.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Txtuser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Txtuser.Enabled = False
         Me.Txtuser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtuser.ForeColor = System.Drawing.Color.Gainsboro
         Me.Txtuser.Location = New System.Drawing.Point(14, 72)
         Me.Txtuser.Margin = New System.Windows.Forms.Padding(2)
         Me.Txtuser.Name = "Txtuser"
+        Me.Txtuser.ReadOnly = True
         Me.Txtuser.Size = New System.Drawing.Size(256, 21)
         Me.Txtuser.TabIndex = 25
         '
@@ -488,30 +514,6 @@ Partial Class FrmEditar
         Me.Lbleditperf.TabIndex = 19
         Me.Lbleditperf.Text = "Editar mi Perfil"
         '
-        'BtnClose
-        '
-        Me.BtnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnClose.Image = Global.SB.My.Resources.Resources.icons8_close_window_24px
-        Me.BtnClose.Location = New System.Drawing.Point(3, 3)
-        Me.BtnClose.Margin = New System.Windows.Forms.Padding(2)
-        Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(24, 24)
-        Me.BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.BtnClose.TabIndex = 8
-        Me.BtnClose.TabStop = False
-        '
-        'PBuser
-        '
-        Me.PBuser.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PBuser.Image = Global.SB.My.Resources.Resources.editprofile
-        Me.PBuser.Location = New System.Drawing.Point(8, 60)
-        Me.PBuser.Margin = New System.Windows.Forms.Padding(2)
-        Me.PBuser.Name = "PBuser"
-        Me.PBuser.Size = New System.Drawing.Size(256, 256)
-        Me.PBuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PBuser.TabIndex = 6
-        Me.PBuser.TabStop = False
-        '
         'FrmEditar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -526,10 +528,10 @@ Partial Class FrmEditar
         Me.Text = "Frmeditarperfil"
         Me.Plnperfil.ResumeLayout(False)
         Me.Plnperfil.PerformLayout()
-        Me.Plneditarperf.ResumeLayout(False)
-        Me.Plneditarperf.PerformLayout()
         CType(Me.BtnClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBuser, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Plneditarperf.ResumeLayout(False)
+        Me.Plneditarperf.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

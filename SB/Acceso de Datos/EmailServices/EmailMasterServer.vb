@@ -8,6 +8,7 @@ Public MustInherit Class EmailMasterServer
     Protected port As Integer
     Protected ssl As Boolean
     Protected Sub InitalizeSmtpClient()
+        'Inicia los protocolos para enviar
         smtpClient = New SmtpClient With {
             .Credentials = New NetworkCredential(senderMail, password),
             .Host = host,
@@ -16,6 +17,7 @@ Public MustInherit Class EmailMasterServer
         }
     End Sub
     Public Sub SendMail(ByVal subject As String, ByVal body As String, ByVal receiverMail As List(Of String))
+        'Cuerpo, encabezado y partes del email que "recolecta el sistema antes de enviar la boleta"
         Dim mailMessage As MailMessage = New MailMessage
         Try
             mailMessage.From = New MailAddress(senderMail)

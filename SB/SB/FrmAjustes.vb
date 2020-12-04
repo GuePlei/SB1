@@ -42,12 +42,12 @@ Public Class FrmAjustes
         Dim validdel = userModelC.Delnames(Txtuserdel.Text)
         If validdel = False Then
             MessageBox.Show("Nombre de usuario inexistente")
+            Txtuserdel.Text = ""
         Else
             If Txtuserdel.Text = "" Then
                 MsgBox("No puede dejar ese campo en blanco", MsgBoxStyle.Critical, "Error")
             Else
                 If MsgBox("Esta acción es irreversible, ¿está seguro de eliminar?", MsgBoxStyle.YesNo, "Atención") = vbYes Then
-
                     Dim userModelB As New UserModelB(
                                                      LoginName:=Txtuserdel.Text)
                     Dim result = userModelB.Borrar
@@ -57,19 +57,17 @@ Public Class FrmAjustes
             End If
         End If
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        FrmListUser.Show()
-    End Sub
     Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
         BtnClose.Image = My.Resources.icons8_close_window_24px_1
     End Sub
     Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
-
     Private Sub Btndel_Click(sender As Object, e As EventArgs) Handles Btndel.Click
         validdel()
         FrmListUser.UsersTableAdapter.Fill(FrmListUser.BoletasDigitalesDataSet.Users)
     End Sub
-
+    Private Sub ListUser_Click(sender As Object, e As EventArgs) Handles ListUser.Click
+        FrmListUser.Show()
+    End Sub
 End Class

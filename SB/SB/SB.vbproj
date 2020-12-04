@@ -101,6 +101,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BoletasDigitalesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Frmacercade.Designer.vb">
+      <DependentUpon>Frmacercade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmacercade.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmEditar.Designer.vb">
       <DependentUpon>FrmEditar.vb</DependentUpon>
     </Compile>
@@ -162,6 +168,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frmacercade.resx">
+      <DependentUpon>Frmacercade.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEditar.resx">
       <DependentUpon>FrmEditar.vb</DependentUpon>
     </EmbeddedResource>

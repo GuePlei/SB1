@@ -58,7 +58,10 @@ Public Class FrmEditar
     End Sub
 
     Private Sub Btnsave_Click(sender As Object, e As EventArgs) Handles Btnsave.Click
-        If Txtnewpass.Text = Txtcomfpass.Text Then
+        If Txtnewpass.Text = "" Then
+            MessageBox.Show("No puede dejar el campo de nueva contraseña en blanco")
+        Else
+            If Txtnewpass.Text = Txtcomfpass.Text Then
             If Txtactualpass.Text = ActiveUser.Password Then
 
                 Dim userModel As New UserModel(idUser:=ActiveUser.idUser,
@@ -79,15 +82,8 @@ Public Class FrmEditar
             End If
         Else
             MessageBox.Show("Las contraseñas no coinciden")
-
-
         End If
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btncancel.Click
-        Plneditarperf.Visible = False
-        Reset()
+        End If
     End Sub
     Private Sub BtnClose_MouseEnter(sender As Object, e As EventArgs) Handles BtnClose.MouseEnter
         BtnClose.Image = My.Resources.icons8_close_window_24px_1
@@ -95,5 +91,8 @@ Public Class FrmEditar
     Private Sub BtnClose_MouseLeave(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
-
+    Private Sub Btncancel_Click(sender As Object, e As EventArgs) Handles Btncancel.Click
+        Plneditarperf.Visible = False
+        Reset()
+    End Sub
 End Class
