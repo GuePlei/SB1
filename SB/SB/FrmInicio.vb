@@ -99,4 +99,7 @@ Public Class FrmInicio
     Private Sub Btneditar_Click(sender As Object, e As EventArgs) Handles Btneditar.Click
         OpenChildForm(New FrmEditar)
     End Sub
+    Private Sub Btnacer_Click(sender As Object, e As EventArgs) Handles Btnacer.Click
+        Frmacercade.Show()
+    End Sub
 End Class

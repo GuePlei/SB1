@@ -27,4 +27,8 @@ Public Class FrmListUser
     Private Sub BtnClose_MouseLeave_1(sender As Object, e As EventArgs) Handles BtnClose.MouseLeave
         BtnClose.Image = My.Resources.icons8_close_window_24px
     End Sub
+    Private Sub Lblh_MouseMove(sender As Object, e As MouseEventArgs) Handles Lblh.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
 End Class
